@@ -1,4 +1,5 @@
 import java.util.Scanner;
+import java.util.InputMismatchException;
 
 public class Principal {
 
@@ -7,9 +8,34 @@ public class Principal {
     Scanner entrada = new Scanner(System.in);
 
     System.out.println("Inserta el primer número");
-    int numero1=entrada.nextInt();
+
+    int numero1 = 0;
+    int numero2 = 0;
+
+    try{
+        numero1=entrada.nextInt();
+        if(numero1 <= 0){
+            System.out.println("El número es inferior o igual a 0");
+            System.exit(0);
+        }
+    } catch(InputMismatchException e){
+        System.out.println("Este no es un número válido");
+        System.exit(0);
+    }
+
     System.out.println("Inserta el segundo número");
-    int numero2=entrada.nextInt();
+    try{
+        numero2=entrada.nextInt();
+        if(numero2 <= 0){
+            System.out.println("El número es inferior o igual a 0");
+            System.exit(0);
+        }
+    } catch(InputMismatchException e){
+        System.out.println("Este no es un número válido");
+        System.exit(0);
+    }
+
+
 
     int resultado=numero1+numero2;
 
