@@ -6,12 +6,12 @@ public class Ejercicio1 {
 		int y;
 		
 		System.out.println("ingresa el tamaño de tus columnas");
-		entrada=new Scanner(System.in);
-		x=entrada.nextInt();
+	//	entrada=new Scanner(System.in);
+	//	x=entrada.nextInt();
 		
 		final int[] arregloNumero = new int[x];
 		
-		for (i=1;i<x;i++)
+	//	for (i=1;i<x;i++)
 			
            
 		
