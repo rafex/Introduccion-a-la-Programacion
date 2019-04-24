@@ -12,6 +12,8 @@ import java.util.Arrays;
 
 public class EscribirArchivoJava8 {
 
+    String algo;
+
     public static void main(String[] args) {
 
         final String nombreDelArchivo = "archivoDeSalida1.txt";
@@ -21,7 +23,8 @@ public class EscribirArchivoJava8 {
 
         final String[] lineas = new String[] { "linea 1", "linea 2", "linea 3" };
 
-        try (BufferedWriter bufferDeEscritura = Files.newBufferedWriter(path, StandardCharsets.UTF_8, StandardOpenOption.CREATE)) {
+        try (BufferedWriter bufferDeEscritura = Files.newBufferedWriter(path, StandardCharsets.UTF_8,
+                StandardOpenOption.CREATE)) {
             Arrays.stream(lineas).forEach((linea) -> {
                 try {
                     bufferDeEscritura.write(linea);
