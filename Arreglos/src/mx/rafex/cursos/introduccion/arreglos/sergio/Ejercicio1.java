@@ -20,7 +20,7 @@ public class Ejercicio1 {
 		
 		System.out.println("La suma de los numeros en el arreglo es: " + suma);
 		
-		
+	
 	}
 
 }
