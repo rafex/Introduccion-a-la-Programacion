@@ -17,13 +17,14 @@ public class Ejercicio1 {
             for (int indice = 0; indice < arregloNumeros.length; indice++) {
                 System.out.println("Insertar número en la posición [" + indice + "]");
                 arregloNumeros[indice] = entrada.nextInt();
+                
+                suma = suma + arregloNumeros[indice];
             }
 
             System.out.println("Mostrando valores del arreglo");
             for (int indice = 0; indice < arregloNumeros.length; indice++)
                 System.out.println("Valor del arreglo 'arregloNumeros' en la posición [" + indice + "] : "
                         + arregloNumeros[indice]);
-            
             
             System.out.println("la suma del arrego es " + suma  );
         }
