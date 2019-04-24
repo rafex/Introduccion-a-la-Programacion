@@ -4,8 +4,8 @@ import java.util.Scanner;
 public class Ejercicio1 {
 	public static void main(String [] args) {
 		
-		int suma = 0;
-	
+		int suma ;
+		suma = 0;
 		
 		try (final Scanner entrada = new Scanner(System.in)) {
 
