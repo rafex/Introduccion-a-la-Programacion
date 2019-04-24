@@ -18,16 +18,16 @@ public class LeerUnArchivoConBufferDelClasspath {
 
         try {
 
-            final InputStream inputStream = LeerUnArchivoConBufferDelClasspath.class
+            final InputStream flujoDeEntrada = LeerUnArchivoConBufferDelClasspath.class
                     .getResourceAsStream(nombreDelArchivo);
-            String cadena;
-            final BufferedReader b = new BufferedReader(new InputStreamReader(inputStream));
-            while ((cadena = b.readLine()) != null)
-                System.out.println(cadena);
-            b.close();
+            String linea;
+            final BufferedReader bufferDeLectura = new BufferedReader(new InputStreamReader(flujoDeEntrada));
+            while ((linea = bufferDeLectura.readLine()) != null)
+                System.out.println(linea);
+            bufferDeLectura.close();
 
-        } catch (final IOException e) {
-            e.printStackTrace();
+        } catch (final IOException excepcion) {
+            excepcion.printStackTrace();
         }
 
     }

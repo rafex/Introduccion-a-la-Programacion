@@ -18,15 +18,15 @@ public class LeerUnArchivoConBuffer {
         final String rutaMasNombreDeArchivo = ubicacionExactaDelArchivo + nombreDelArchivo;
 
         try {
-            String cadena;
-            final FileReader f = new FileReader(rutaMasNombreDeArchivo);
-            final BufferedReader b = new BufferedReader(f);
-            while ((cadena = b.readLine()) != null)
-                System.out.println(cadena);
-            b.close();
+            String linea;
+            final FileReader lectorDeArchivo = new FileReader(rutaMasNombreDeArchivo);
+            final BufferedReader bufferDeLectura = new BufferedReader(lectorDeArchivo);
+            while ((linea = bufferDeLectura.readLine()) != null)
+                System.out.println(linea);
+            bufferDeLectura.close();
 
-        } catch (final IOException e) {
-            e.printStackTrace();
+        } catch (final IOException excepcion) {
+            excepcion.printStackTrace();
         }
 
     }

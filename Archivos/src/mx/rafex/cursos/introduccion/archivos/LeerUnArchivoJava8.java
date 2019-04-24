@@ -24,8 +24,8 @@ public class LeerUnArchivoJava8 {
         try {
             final Stream<String> flujo = Files.lines(ruta, StandardCharsets.UTF_8);
             flujo.forEach(System.out::println);
-        } catch (final IOException e) {
-            e.printStackTrace();
+        } catch (final IOException excepcion) {
+            excepcion.printStackTrace();
         }
 
     }

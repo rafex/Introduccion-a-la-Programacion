@@ -2,6 +2,7 @@
 package mx.rafex.cursos.introduccion.archivos;
 
 import java.io.IOException;
+import java.net.URI;
 import java.net.URISyntaxException;
 import java.nio.charset.StandardCharsets;
 import java.nio.file.Files;
@@ -21,13 +22,17 @@ public class LeerUnArchivoJava8DelClasspath {
 
         Stream<String> flujo = null;
         try {
-            final Path ruta = Paths.get(LeerUnArchivoJava8DelClasspath.class.getResource(nombreDelArchivo).toURI());
-            flujo = Files.lines(ruta, StandardCharsets.UTF_8);
-            flujo.forEach(System.out::println);
-        } catch (final IOException e) {
-            e.printStackTrace();
-        } catch (final URISyntaxException e1) {
-            e1.printStackTrace();
+            final URI uri = LeerUnArchivoJava8DelClasspath.class.getResource(nombreDelArchivo).toURI();
+            final Path ruta = Paths.get(uri);
+            if (Files.exists(ruta)) {
+                flujo = Files.lines(ruta, StandardCharsets.UTF_8);
+                flujo.forEach(System.out::println);
+            } else
+                System.err.println("No se encuentra el archivo");
+        } catch (final IOException excepcion) {
+            excepcion.printStackTrace();
+        } catch (final URISyntaxException excepcion) {
+            excepcion.printStackTrace();
         }
 
         finally {
