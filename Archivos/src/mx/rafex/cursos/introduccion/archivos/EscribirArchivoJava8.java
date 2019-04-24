@@ -12,8 +12,6 @@ import java.util.Arrays;
 
 public class EscribirArchivoJava8 {
 
-    String algo;
-
     public static void main(String[] args) {
 
         final String nombreDelArchivo = "archivoDeSalida1.txt";
