@@ -11,8 +11,9 @@ public class Ejercicio1 {
 		
 		final int[] arregloNumero = new int[x];
 		
-		for (final int numero : arregloNumero)
-            System.out.println(numero);
+		for (i=1;i<x;i++)
+			
+           
 		
 		
 		
