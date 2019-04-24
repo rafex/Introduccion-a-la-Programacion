@@ -13,8 +13,9 @@ public class Ejercicio1 {
 		
 		for(int i = 0; i < arregloNumeros.length; i++) {
 			System.out.println(i);
+			
 		}
-		
+
 		
 		
 		
