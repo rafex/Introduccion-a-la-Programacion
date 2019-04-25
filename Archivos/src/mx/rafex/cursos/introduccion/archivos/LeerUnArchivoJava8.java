@@ -16,7 +16,7 @@ public class LeerUnArchivoJava8 {
 
     public static void main(String[] args) {
 
-        final String ubicacionExactaDelArchivo = "/Volumes/@rafex_hdd/job/clientes/cursos/Introduccion-a-la-Programacion/Archivos/src/mx/rafex/cursos/introduccion/archivos/";
+        final String ubicacionExactaDelArchivo = "C:\\Users\\KMMX001\\Desktop\\Introduccion-a-la-Programacion\\Archivos\\src\\mx\\rafex\\cursos\\introduccion\\archivos\\";
         final String nombreDelArchivo = "archivoPruebaEntrada.txt";
         final String rutaMasNombreDeArchivo = ubicacionExactaDelArchivo + nombreDelArchivo;
 
