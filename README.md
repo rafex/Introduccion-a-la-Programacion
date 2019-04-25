@@ -234,7 +234,7 @@ En los datos primitivos no existe alguno en el cual pueda representar una cadena
 | !=           | Es distinto                                |
 | <, <=, >, >= | Menor, menor o igual, mayor, mayor o igual |
 | &&           | Operador and (Y)                           |
-| `||` | Operador or (O) |
+| \|\| | Operador or (O) |
 | !            | Operador not (NO)                          |
 
 ---
