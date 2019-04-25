@@ -3,7 +3,7 @@ package mx.rafex.cursos.introduccion.colecciones;
 import java.util.HashMap;
 import java.util.Map;
 
-public class Colecciones3 {
+public class Colecciones4 {
 
     public static void main(final String[] args) {
 

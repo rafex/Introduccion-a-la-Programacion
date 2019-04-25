@@ -27,7 +27,10 @@ public class Metodos3 {
             resultado = multiplicacion(numeroUno, numeroDos);
             mostrarMensaje("El resultado de la multiplicacion es: " + resultado);
 
-            resultado = suma(numeroUno, numeroDos, 20, 40, 10);
+            final int veinte = 20;
+//            final int[] arregloNumeros = new int[3];
+//            resultado = suma(arregloNumeros);
+            resultado = suma(numeroUno, numeroDos, veinte, 40, 10, 40, 04, 3434, 34, 34, 34, 34, 23, 2);
             mostrarMensaje("El resultado de la suma es: " + resultado);
 
             resultado = resta(numeroUno, numeroDos, 122, 33, 11111);
@@ -70,6 +73,14 @@ public class Metodos3 {
         final int resultado = numeroUno * numeroDos;
         return resultado;
     }
+
+//    public static int suma(final int[] arreglosEnteros) {
+//        int resultado = 0;
+//        for (final int numero : arreglosEnteros)
+//            resultado += numero;
+//
+//        return resultado;
+//    }
 
     public static int suma(final int... numeros) {
         int resultado = 0;
