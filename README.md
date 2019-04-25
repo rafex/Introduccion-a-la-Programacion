@@ -72,6 +72,17 @@ int edad=30; // se declara la variable edad de tipo int y se inicializa con el v
 int a, b=20; // se declara la variable a y b, pero b es inicializada con el valor 20;
 ```
 
+La asignación se hace por medio del signo de **"="**, debe entenderse que esto no representa comparativa de igualdad, sino asignación directa. Sin embargo existen otros operadores de asignación.
+
+| Operador | Descripción                                                                                                              | Ejemplo                                                                                   |
+|----------|--------------------------------------------------------------------------------------------------------------------------|-------------------------------------------------------------------------------------------|
+| =        | Asigna una expresión o valor de derecha a izquierda del operador.                                                        | int a=9; // esto es una asignación directa                                                |
+| +=       | Suma la expresión de la derecha, a la variable que se encuentra al izquierda del operador.                               | int a=3; a+=5; // esto le da el valor de 8 a la variable a, que sería igual a poner a=a+5 |
+| -=       | Resta la expresión de la derecha, a la variable que se encuentra al izquierda del operador.                              |                          int a=10; a-=5; // esto le da el valor de 5 a la variable a, que sería igual a poner a=a-5                                                                 |
+| *=       | Multiplica la expresión de la derecha, a la variable que se encuentra al izquierda del operador.                         |     int a=3; a*=5; // esto le da el valor de 15 a la variable a, que sería igual a poner a=a*5                                                                                      |
+| /=       | Divide la expresión de la derecha, a la variable que se encuentra al izquierda del operador.                             |             int a=10; a/=2; // esto le da el valor de 5 a la variable a, que sería igual a poner a=a/2                                                                              |
+| %=       | Calcula el resto de la división de la expresión de la derecha, a la variable que se encuentra al izquierda del operador. |int a=10; a%=2; // esto le da el valor de 0 a la variable a, que sería igual a poner a=a%5                                                                                           |
+
 ---
 
 #### Camel case
