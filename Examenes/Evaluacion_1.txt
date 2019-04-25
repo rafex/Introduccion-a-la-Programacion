@@ -1,0 +1,5 @@
+1)¿Qué es la JVM?
+2)¿Qué es JRE?
+3)¿Qué es JDK?
+4)Escribe tres datos primitivos
+5)¿Si tuviera que representar números reales (decimales) que dato primitivo sería?
