@@ -11,7 +11,7 @@ public class Ejercicio {
 
             final int[] arregloNumeros = new int[dimensionArreglo];
 
-            for (int indice = 0; indice < arregloNumeros.length; indice++) {
+                          for (int indice = 0; indice < arregloNumeros.length; indice++) {
                 System.out.println("Insertar número en la posición [" + indice + "]");
                 arregloNumeros[indice] = entrada.nextInt();
                 
