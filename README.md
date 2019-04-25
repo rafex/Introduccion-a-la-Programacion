@@ -17,14 +17,54 @@ En *Java* las variables pueden ser datos primitivos u objetos.
 
 ##### Declaración de Variables
 Para declarar una variable la estructura es la siguiente:
-
 > *tipo_de_dato nombre_de_la_variable*
-
 Ejemplo:
 ```java
 int edad;
 ```
 
+Y para declarar varias variables del mismo tipo la estructura es la siguiente:
+> *tipo_de_dato nombre_de_la_variable_1,nombre_de_la_variable_2,nombre_de_la_variable_3*
+Ejemplo:
+```java
+int a,b,c,edad;
+```
+
+> Restricciones:
+> - No puede usarse una palabra reservada para el nombre de una variables
+
+##### Asignación
+Una vez que la variable es declarada se puede asignar un dato/valo con la siguiente estructura:
+> *nombre_variable=expresion_o_valor*
+Ejemplo:
+```java
+int edad, a, b, c, resultado; // se declaran las variables
+edad=30;
+a=10;
+b=3;
+c=a+b;
+resultado=edad-10;
+```
+Otra manera es asignar un valor inicial a una variable en el mismo momento que es declarada, eso se hace de la siguiente manera:
+```java
+int edad=30; // se declara la variable edad de tipo int y se inicializa con el valor 30
+int a, b=20; // se declara la variable a y b, pero b es inicializada con el valor 20;
+```
+
+#### Palabras reservadas
+
+| reservada | reservada | reservada  | reservada | reservada    |
+|-----------|-----------|------------|-----------|--------------|
+| abstract  | continue  | for        | new       | switch       |
+| assert    | default   | goto       | package   | synchronized |
+| boolean   | do        | if         | private   | this         |
+| break     | double    | implements | protected | throw        |
+| byte      | else      | import     | public    | thorws       |
+| case      | enum      | instanceof | return    | transient    |
+| catch     | extends   | int        | short     | try          |
+| char      | final     | interface  | static    | void         |
+| class     | finally   | long       | strictfp  | volatile     |
+| const     | float     | native     | super     | while        |
 
 #### Datos primitivos
 En Java solo existen 8 tipos de datos primitivos, que se claifican de la siguiente manera:
