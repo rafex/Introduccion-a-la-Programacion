@@ -14,5 +14,7 @@ public class Cadena {
 		System.out.println("la cadena es" +" "+ cadtex);
 		System.out.println("la letra que esta en la posiciones"+" "+posicion+" "+cadtex.charAt(posicion));
 	}
+	
+	/////
 
 }
