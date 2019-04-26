@@ -21,15 +21,15 @@ public class Metodos1 {
 
     }
 
-    public static void llenarArreglo(final int[] arregloDeNumeros, final Scanner escaner) {
-        for (int i = 0; i < arregloDeNumeros.length; i++) {
+    public static void llenarArreglo(final int[] x, final Scanner s) {
+        for (int i = 0; i < x.length; i++) {
             mostrarMensaje("Inserte un número");
-            arregloDeNumeros[i] = escaner.nextInt();
+            x[i] = s.nextInt();
         }
     }
 
-    public static void mostrarMensaje(final String mensaje) {
-        System.out.println(mensaje);
+    public static void mostrarMensaje(final String objeto) {
+        System.out.println(objeto);
     }
 
     public static void mostrarMensaje(final Object objeto) {

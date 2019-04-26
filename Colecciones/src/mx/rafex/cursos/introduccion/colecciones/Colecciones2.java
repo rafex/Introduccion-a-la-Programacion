@@ -11,14 +11,20 @@ public class Colecciones2 {
 
         final List<String> arrayList = new ArrayList<>();
 
-        for (int i = 0; i < 1_000; i++) {
+        final String cadenaContrbando = "de contrbando";
+
+        arrayList.add(cadenaContrbando);
+
+        for (int i = 0; i < 1_0; i++) {
             numeroAzar = (int) (Math.random() * 1000) + 1;
             arrayList.add("algo" + numeroAzar);
         }
 
-        arrayList.forEach(System.out::println);
+        arrayList.forEach(System.out::println); // java 8
 
         System.out.println("****************************************************");
+
+        arrayList.remove(0);
 
         for (final String cadena : arrayList)
             System.out.println(cadena);
