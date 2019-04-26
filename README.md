@@ -12,6 +12,33 @@ Hoy en día utilizamos diferentes programas en la vida diaria, ya sea en nuestra
 
 Para dar respuesta a esa pregunta, es muy simple. Hay que aprender a programar, para ello en este curso de introducción a la programación basado en *Java* iniciaremos este hito en la vida de los que desean aprender para lograr crear una aplicación propia.
 
+> *Java* es un lenguaje de alto nivel, esto quiere decir que su escritura es "sencilla" para el ser humano, lo que permite una máxima flexibilidad al programador al momento de escribirlo y leerlo.
+
+---
+
+#### JVM
+
+Java Virtual Machine o máquina virtual Java ejecuta instrucciones generadas por un compilador Java, es decir interpreta el código bytecode *(lo que "compilamos" con javac)* y un entorno de ejecución que permite ejecutar estos archivos de clase Java en *"cualquier"* plataforma, no importando el origen dónde fueron desarrollados originalmente.
+
+Cuando se *"compila"* el código del lenguaje Java no lo hace a un lenguaje máquina, sino a un intermedio denominado **bytecode** y este es el que ejecuta nuestra máquina virtual de Java. La premisa es que el código se pueda ejecutar en cualquier sistema operativo, pero esto es relativo siempre y cuando no usemos instrucciones nativas del SO o particularidades especiales de la máquina virtual.
+
+El eslogan es *"Escribe una vez, ejecuta en todas partes"* *("Write once, write everywhere")*
+
+---
+
+#### JRE
+
+Java Runtime Environment, en español significa Entorno de Ejecución de Java. El JRE actúa como un «intermediario» entre el sistema y Java.
+
+Este ambiente de ejecución para aplicaciones Java (JRE) está compuesto por dos importantes áreas, la primera son las clases que conforman el API de java y la segunda es la JVM.
+
+- El API son todas las clases que componen el ambiente Java y que al momento de ser utilizadas desde la aplicación podrán ser ejecutadas y/o interpretadas por la JVM.
+- La JVM es un componente de software que actúa justamente como una máquina virtual o un espacio virtual de memoria donde se ejecutan las aplicaciones Java.
+
+---
+
+#### JDK
+
 ---
 
 #### Variables
@@ -82,6 +109,10 @@ La asignación se hace por medio del signo de **"="**, debe entenderse que esto 
 | *=       | Multiplica la expresión de la derecha, a la variable que se encuentra al izquierda del operador.                         |     int a=3; a*=5; // esto le da el valor de 15 a la variable a, que sería igual a poner a=a*5                                                                                      |
 | /=       | Divide la expresión de la derecha, a la variable que se encuentra al izquierda del operador.                             |             int a=10; a/=2; // esto le da el valor de 5 a la variable a, que sería igual a poner a=a/2                                                                              |
 | %=       | Calcula el resto de la división de la expresión de la derecha, a la variable que se encuentra al izquierda del operador. |int a=10; a%=2; // esto le da el valor de 0 a la variable a, que sería igual a poner a=a%5                                                                                           |
+
+---
+
+#### Estructuras de control
 
 ---
 
@@ -234,7 +265,7 @@ En los datos primitivos no existe alguno en el cual pueda representar una cadena
 | !=           | Es distinto                                |
 | <, <=, >, >= | Menor, menor o igual, mayor, mayor o igual |
 | &&           | Operador and (Y)                           |
-| `||` | Operador or (O) |
+| \|\| | Operador or (O) |
 | !            | Operador not (NO)                          |
 
 ---
@@ -250,6 +281,14 @@ En los datos primitivos no existe alguno en el cual pueda representar una cadena
 | %        | Mod, es el resto de una división entre enteros                                       |
 | ++       | Incrementa la variable en una unidad y la deposita el resultado en la misma variable |
 | - -       | Decrementa la variable en una unidad y la deposita el resultado en la misma variable |
+
+---
+
+### Clases
+
+---
+
+### Metodos
 
 ---
 
