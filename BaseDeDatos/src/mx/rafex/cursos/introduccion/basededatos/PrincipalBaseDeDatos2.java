@@ -5,13 +5,14 @@ import java.sql.DriverManager;
 import java.sql.ResultSet;
 import java.sql.SQLException;
 import java.sql.Statement;
+import java.text.DecimalFormat;
 import java.util.HashSet;
 import java.util.Random;
 import java.util.Set;
 
 import mx.rafex.cursos.introduccion.basededatos.productos.Producto;
 
-public class PrincipalBaseDeDatos {
+public class PrincipalBaseDeDatos2 {
 
     static Connection conexion;
 
@@ -21,34 +22,31 @@ public class PrincipalBaseDeDatos {
 
     public static void main(final String[] args) {
 
-        final String insertarProducto = "INSERT INTO producto (identificador_externo,nombre,precio,cantidad) VALUES "
+        final String nombreTabla = "producto";
+
+        final String insertarProducto = "INSERT INTO " + nombreTabla
+                + " (identificador_externo,nombre,precio,cantidad) VALUES "
                 + "('{identificadorExterno}','{nombre}',{precio},{cantidad})";
 
         String consulta = null;
 
-        final String crearTabla = "CREATE TABLE producto " +
+        final String crearTabla = "CREATE TABLE " + nombreTabla + " " +
 
-                "(identificador_interno INTEGER PRIMARY KEY AUTOINCREMENT," +
+                "(identificador_interno bigserial primary key," +
 
-                " identificador_externo TEXT NOT NULL, " +
+                " identificador_externo varchar(40) NOT NULL, " +
 
-                " nombre TEXT NOT NULL, " +
+                " nombre text NOT NULL, " +
 
-                " precio REAL NOT NULL, " +
+                " precio NUMERIC(10,4) NOT NULL, " +
 
-                " cantidad INTEGER) ";
+                " cantidad INTEGER"
+
+                + "); ";
 
         ejecutarConsultaDeActualizacion(crearTabla);
 
-        final Producto producto = new Producto();
-        final Integer idAleatorio = (int) (Math.random() * 1000) + 1;
-        producto.setIdentificadorExterno(idAleatorio);
-        final Integer numeroAzar = (int) (Math.random() * 100000) + 1;
-        producto.setNombre("Caja_" + numeroAzar);
-        final double random = new Random().nextDouble();
-        final double precioRandom = 10 + random * (5000 - 10);
-        producto.setPrecio(precioRandom);
-        producto.setCantidad((int) (Math.random() * 100000) + 1);
+        final Producto producto = crearProducto();
 
         consulta = insertarProducto.replace("{identificadorExterno}", producto.getIdentificadorExterno().toString())
                 .replace("{nombre}", producto.getNombre()).replace("{precio}", producto.getPrecio().toString())
@@ -56,7 +54,7 @@ public class PrincipalBaseDeDatos {
 
         ejecutarConsultaDeActualizacion(consulta);
 
-        consulta = "SELECT * FROM producto";
+        consulta = "SELECT * FROM " + nombreTabla;
 
         final Set<Producto> resultado = ejecutarConsulta(consulta);
 
@@ -70,13 +68,28 @@ public class PrincipalBaseDeDatos {
 
     }
 
+    private static Producto crearProducto() {
+        final Producto producto = new Producto();
+        final Integer idAleatorio = (int) (Math.random() * 1000) + 1;
+        producto.setIdentificadorExterno(idAleatorio);
+        final Integer numeroAzar = (int) (Math.random() * 100000) + 1;
+        producto.setNombre("Caja_" + numeroAzar);
+        final double random = new Random().nextDouble();
+        final double precioRandom = 10 + random * (5000 - 10);
+        final DecimalFormat formatoDecimal = new DecimalFormat("#.##");
+        producto.setPrecio(Double.valueOf(formatoDecimal.format(precioRandom)));
+        producto.setCantidad((int) (Math.random() * 100000) + 1);
+        return producto;
+    }
+
     public static void conectarBaseDeDatos() {
         try {
-            final String url = "jdbc:sqlite:/Users/rafex/tmp/test-sqlite.db";
-            conexion = DriverManager.getConnection(url);
+            Class.forName("org.postgresql.Driver");
+            final String url = "jdbc:postgresql://192.168.0.8:5432/rafex";
+            conexion = DriverManager.getConnection(url, "externo", "externo123");
 
             System.out.println("Se ha conectado a la base correctamente");
-        } catch (final SQLException e) {
+        } catch (final SQLException | ClassNotFoundException e) {
             System.err.println("No se ha podido conectar a la base de datos");
             System.err.println(e.getMessage());
         }
