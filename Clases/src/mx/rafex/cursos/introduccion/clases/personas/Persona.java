@@ -40,11 +40,13 @@ public class Persona {
         this.edad = edad;
     }
 
+    // getter
     public String getNacionalidad() {
         return nacionalidad;
     }
 
-    public void setNacionalidad(final String nacionalidad) {
+    // setter
+    public void setNacionalidad(String nacionalidad) {
         this.nacionalidad = nacionalidad;
     }
 
@@ -97,8 +99,8 @@ public class Persona {
 
         edad = periodo.getYears();
 
-        System.out.printf("Tu edad es: %s años, %s meses y %s días\n", periodo.getYears(), periodo.getMonths(),
-                periodo.getDays());
+//        System.out.printf("Tu edad es: %s años, %s meses y %s días\n", periodo.getYears(), periodo.getMonths(),
+//                periodo.getDays());
     }
 
     @Override
