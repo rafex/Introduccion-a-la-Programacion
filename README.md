@@ -35,8 +35,6 @@ Cuando se *"compila"* el código del lenguaje Java no lo hace a un lenguaje máq
 
 El eslogan es *"Escribe una vez, ejecuta en todas partes"* *("Write once, write everywhere")*
 
-
-
 ---
 
 #### JDK
@@ -45,21 +43,23 @@ El eslogan es *"Escribe una vez, ejecuta en todas partes"* *("Write once, write 
 
 Algunas de los comandos disponibles al instalar el *JDK*, son:
 
-- jar: crear y gestionar **JAR** (Java Archive files)
-- java: ejecutar aplicaciones *Java*
-- javac: compilador de *Java*
-- javadoc: Generador de documentación *API*
-- javah: generador de header y stubs C, ayuda a crear métodos nativos
-- javap: decompilador de *bytecode* (archivos *.class*)
-- jcmd:
-- jconsole
-- jdb
-- jps
-- jstat
-- jhat
-- jmap
-- jstack
-- jjs
+- jar: crear y gestionar **JAR** (Java Archive files) - *(Java archive tool)*
+- java: ejecutar aplicaciones *Java* - *(Java application launcher)*
+- javac: compilador de *Java* - *(Java compiler)*
+- javadoc: Generador de documentación *API* - *(Java API documentation generator)*
+- javah: generador de header y stubs C, ayuda a crear métodos nativos - *(C header and stub file generator)*
+- javap: decompilador de *bytecode* (archivos *.class*) - *(Java class file disassembler)*
+- jcmd: diagnóstico de la *JVM*
+- jconsole: monitorización de la *JVM* por medio de *JMS* ya sean remotas o locales - *(J2SE Monitoring and Management Console)*
+- jdb: *Java Debugger*
+- jps:Lista las *JVM's* de un sistema - *(Java Virtual Machine Process Status Tool)*
+- jstat: recolecta y muestra estádisticas de rendimiento - *(Java Virtual Machine statistics monitoring tool)*
+- jhat: Convierte archivos *heap dump* en servidores web para poder navegar sobre este - *(Java Heap Analysis Tool)*
+- jmap: mapas de memoria de un proceso - *(memory map)*
+- jstack: Mustra un stack trace de hilos de un proceso - *(stack trace)*
+- jjs: shell de Nashorn
+
+[Referencia](https://www.java.com/es/download/faq/techinfo.xml)
 
 ---
 
