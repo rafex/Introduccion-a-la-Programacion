@@ -16,19 +16,9 @@ Para dar respuesta a esa pregunta, es muy simple. Hay que aprender a programar, 
 
 ---
 
-#### JVM
-
-Java Virtual Machine o máquina virtual Java ejecuta instrucciones generadas por un compilador Java, es decir interpreta el código bytecode *(lo que "compilamos" con javac)* y un entorno de ejecución que permite ejecutar estos archivos de clase Java en *"cualquier"* plataforma, no importando el origen dónde fueron desarrollados originalmente.
-
-Cuando se *"compila"* el código del lenguaje Java no lo hace a un lenguaje máquina, sino a un intermedio denominado **bytecode** y este es el que ejecuta nuestra máquina virtual de Java. La premisa es que el código se pueda ejecutar en cualquier sistema operativo, pero esto es relativo siempre y cuando no usemos instrucciones nativas del SO o particularidades especiales de la máquina virtual.
-
-El eslogan es *"Escribe una vez, ejecuta en todas partes"* *("Write once, write everywhere")*
-
----
-
 #### JRE
 
-Java Runtime Environment, en español significa Entorno de Ejecución de Java. El JRE actúa como un «intermediario» entre el sistema y Java.
+**J**ava **R**untime **E**nvironment, en español significa Entorno de Ejecución de Java. El JRE actúa como un «intermediario» entre el sistema y Java.
 
 Este ambiente de ejecución para aplicaciones Java (JRE) está compuesto por dos importantes áreas, la primera son las clases que conforman el API de java y la segunda es la JVM.
 
@@ -37,7 +27,39 @@ Este ambiente de ejecución para aplicaciones Java (JRE) está compuesto por dos
 
 ---
 
+###### JVM
+
+**J**ava **V**irtual **M**achine o máquina virtual Java ejecuta instrucciones generadas por un compilador Java, es decir interpreta el código bytecode *(lo que "compilamos" con javac)* y un entorno de ejecución que permite ejecutar estos archivos de clase Java en *"cualquier"* plataforma, no importando el origen dónde fueron desarrollados originalmente.
+
+Cuando se *"compila"* el código del lenguaje Java no lo hace a un lenguaje máquina, sino a un intermedio denominado **bytecode** y este es el que ejecuta nuestra máquina virtual de Java. La premisa es que el código se pueda ejecutar en cualquier sistema operativo, pero esto es relativo siempre y cuando no usemos instrucciones nativas del SO o particularidades especiales de la máquina virtual.
+
+El eslogan es *"Escribe una vez, ejecuta en todas partes"* *("Write once, write everywhere")*
+
+
+
+---
+
 #### JDK
+
+**J**ava **D**evelopment **K**it, en español sería Herramienta de Desarrollo Java, aquí encontramos herramientas como *javac* que es el que nos permite poder *"compilar"* nuestros archivos *".java"* *(código fuente)*, en archivos *".class"* *(bytecode)* y estos son los archivos que puede interpretar la *JVM* y ejecutará nuestros programas en *"cualquier"* máquina que tenga *JRE*
+
+Algunas de los comandos disponibles al instalar el *JDK*, son:
+
+- jar: crear y gestionar **JAR** (Java Archive files)
+- java: ejecutar aplicaciones *Java*
+- javac: compilador de *Java*
+- javadoc: Generador de documentación *API*
+- javah: generador de header y stubs C, ayuda a crear métodos nativos
+- javap: decompilador de *bytecode* (archivos *.class*)
+- jcmd:
+- jconsole
+- jdb
+- jps
+- jstat
+- jhat
+- jmap
+- jstack
+- jjs
 
 ---
 
