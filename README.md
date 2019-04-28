@@ -12,7 +12,7 @@ Hoy en día utilizamos diferentes programas en la vida diaria, ya sea en nuestra
 
 Para dar respuesta a esa pregunta, es muy simple. Hay que aprender a programar, para ello en este curso de introducción a la programación basado en *Java* iniciaremos este hito en la vida de los que desean aprender para lograr crear una aplicación propia.
 
-> *Java* es un lenguaje de alto nivel, esto quiere decir que su escritura es "sencilla" para el ser humano, lo que permite una máxima flexibilidad al programador al momento de escribirlo y leerlo.
+> *Java* es un lenguaje de alto nivel, esto quiere decir que su escritura es "sencilla" para el ser humano, lo que permite una máxima flexibilidad al programador al momento de escribirlo y leerlo. Así como una programación orientado a objetos.
 
 ---
 
@@ -281,6 +281,8 @@ while (a<100){
 
 ##### Do-While
 
+Esta condición se ejecutará por lo menos ***UNA* vez y después iniciará el ciclo siempre que se cumpla la condición booleana:
+
 ```
 A es igual a 1
 Hacer
@@ -307,6 +309,8 @@ while (a<100);
 
 ##### For
 
+Este ciclo o bucle se ejecutara **HASTA** que no se cumpla más la condición:
+
 ```
 A es igual a 1
 Para (Inicia i es igual a 0; Hasta que i es menos o igual a 100; aumentamos i más 1)
@@ -325,6 +329,12 @@ int a = 1;
 // }
 for(int i = 1; i <= 100 ; i = i +1){
     a = a + 1;
+}
+
+// si queremos hacer un for infinito sería así:
+
+for(;  ; ){
+    System.out.println("La sumando a: " + a++);
 }
 ```
 
@@ -446,6 +456,36 @@ La visibilidad de los modificadores de acceso es la siguiente:
 | default                 | X                 | X                            |                           |                            |
 | private                 | X                 |                              |                           |                            |
 
+##### Static
+
+Static es un *"modificador de acceso"* que si traducimos literalmente nos daría "estatico", sin embargo no se refiere a un valor que es constante sino a la visibilidad de este fuera de la clase, así que son accesibles desde el nombre de la clase sin necesidad de intanciar. Así que esto implica que no será necesario crear un objeto para acceder a estos atributos y/o métodos.
+
+Ejemplo:
+
+```java
+class OtraClase {
+    static int numeroDeSaludos = 0;
+
+    static void saludar(){
+        System.out.println("Hola!!");
+        numeroDeSaludos++;
+    }
+}
+
+class Ejemplo {
+
+    public static void main(String[] args){
+        OtraClase.saludar();
+        OtraClase.saludar();
+
+        // el resultado será dos
+        System.out.println("Número de saludos: " + OtraClase.numeroDeSaludos);
+    }
+}
+```
+
+
+
 ---
 
 #### Datos primitivos
@@ -498,11 +538,153 @@ En los datos primitivos no existe alguno en el cual pueda representar una cadena
 
 ---
 
+### Programación orientada a objetos o POO
+
+Como se mencionó en la introducción de este documento, el lenguaje *Java* es orientado a objetos, por lo que podremos aplicar lo que dice este paradigma entre estas características y beneficios son: *herencia, cohesión, abstracción, polimorfismo, acoplamiento y encapsulamiento*.
+
+En la vida real todos los objetos tienen una serie de características y un comportamiento. Así que un objeto contiene:
+
+- Campos o atributos: componentes de un objeto que almacenan datos, por ejemplo tamaño, edad, sexo, altura, nacionalidad, ancho, color, dimensión, etc...
+- Rutinas o métodos: son el comportamiento de un objeto que lleva a cabo una determinada acción o tarea con los atributos, por ejemplo calcular edad, calcular la hipotenusa, calcular diametro, calcular área, abrir, cerrar, acelerar, etc...
+
 ### Clases
 
----
+Las clases contienen la definición de los objetos, se puede decir que son *"plantillas"* para la creación de objetos. Entonces podemos decir que la clase persona sería la *plantilla* de cada ser humano y está contendría la definición de un ser humano, y cada ser humano sería una *instancia* u *objeto* de la clase persona.
 
-### Métodos
+La estructura de una clase es:
+
+```java
+[modificadores] class IdentificadorDeClase {
+    // Declaraciones de atributos y metodos
+    ...
+}
+```
+
+Entonces una clase  en sintaxis de *Java* es utilizando la palabra reservada *class* después el nombre/identificador de la clase *(respetando el upper camel case)* continuando con apertura y cierre de llaves ({,}), así:
+
+```java
+// aquí el modificador de acceso es default
+class MiPrimeraClase {
+    // atributos de clase
+
+    // métodos de clase
+}
+```
+
+Como se muestra anteriormente se define una clase en la sintaxis de *Java*, pero para que está funcione correctamente debe contar con atributos y métodos, por ejemplo:
+
+```java
+class Persona {
+    // estos son atributos de clase
+    Date fechaNacimiento;
+    Boolean estaVivo;
+    Float altura;
+    Float peso;
+    Character sexo;
+
+    // estos son métodos de clase
+    void correr(){
+        // aquí las instrucciones que lo harán correr
+    }
+
+    void nadar(){
+        // aquí las instrucciones que lo harán nadar
+    }
+
+}
+```
+
+Sin embargo podemos enriquecer la definición de nuestra clase especificando explícitamente uno de los modificadores de acceso de la siguiente manera:
+
+```java
+// el modificador de acceso es [public] pero puede ser private y protected
+public class MiPrimeraClaseConModificadorDeAcceso {
+    // atributos de clase
+
+    // métodos de clase
+}
+```
+
+Ahora haciendo uso de lo mostrado anteriormente sería así:
+
+```java
+public class Persona {
+    // estos son atributos de clase
+    private Date fechaNacimiento;
+    private Boolean estaVivo;
+    private Float altura;
+    private Float peso;
+    private Character sexo;
+
+    // estos son métodos de clase
+    public void correr(){
+        // aquí las instrucciones que lo harán correr
+    }
+
+    public void nadar(){
+        // aquí las instrucciones que lo harán nadar
+    }
+
+    // método getter del atributo altura
+    public Float getAltura(){
+        return altura;
+    }
+
+    // método setter del atributo altura
+    public void setAltura(Float altura){
+        this.altura = altura;
+    }
+
+}
+```
+
+#### Métodos
+
+Los métodos le definen el comportamiento a los objetos de la clase, estos métodos pueden hacer uso o no de los atributos de la clase, así como crear variables dentro del método para realizar su cometido. La estructura de un método en *Java* es la siguiente:
+
+```java
+public class IdentificadorClase {
+
+    private int atributo1;
+
+    // estructura de método
+    // [modificador] [tipo_de_retorno] [nombre/identificador_método] ([parametros]){
+    //    [retorno]
+    // }
+    public int metodo1(int parametro1,String parametro2){
+        int variableDeMetodo = atributo1 + parametro1;
+        return variableDeMetodo;
+    }
+
+}
+```
+
+El tipo de retorno puede ser cualquier objeto de *Java*, y solamente cuando el tipo de retorno usemos la palabra reservada *void* (retorno vácio) no séra necesario usar la palabra reservada *return*, así:
+
+```java
+public class IdentificadorClase {
+
+    private int atributo1;
+    private String atributo2;
+
+    public void metodo1(int parametro1,String parametro2){
+        int variableDeMetodo = atributo1 + parametro1;
+        atributo1 = variableDeMetodo;
+        atributo2 = parametro2;
+    }
+
+}
+```
+
+###### Método principal o main
+
+Este método nos permite iniciar nuestra aplicación *Java*, siendo el punto de entrada y su estructura es la siguiente:
+
+```java
+    public static void main(String[] args){
+        // aquí las instrucciones que deseamos ejecutar
+    }
+```
 
 ---
 
