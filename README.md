@@ -16,19 +16,9 @@ Para dar respuesta a esa pregunta, es muy simple. Hay que aprender a programar, 
 
 ---
 
-#### JVM
-
-Java Virtual Machine o máquina virtual Java ejecuta instrucciones generadas por un compilador Java, es decir interpreta el código bytecode *(lo que "compilamos" con javac)* y un entorno de ejecución que permite ejecutar estos archivos de clase Java en *"cualquier"* plataforma, no importando el origen dónde fueron desarrollados originalmente.
-
-Cuando se *"compila"* el código del lenguaje Java no lo hace a un lenguaje máquina, sino a un intermedio denominado **bytecode** y este es el que ejecuta nuestra máquina virtual de Java. La premisa es que el código se pueda ejecutar en cualquier sistema operativo, pero esto es relativo siempre y cuando no usemos instrucciones nativas del SO o particularidades especiales de la máquina virtual.
-
-El eslogan es *"Escribe una vez, ejecuta en todas partes"* *("Write once, write everywhere")*
-
----
-
 #### JRE
 
-Java Runtime Environment, en español significa Entorno de Ejecución de Java. El JRE actúa como un «intermediario» entre el sistema y Java.
+**J**ava **R**untime **E**nvironment, en español significa Entorno de Ejecución de Java. El JRE actúa como un «intermediario» entre el sistema y Java.
 
 Este ambiente de ejecución para aplicaciones Java (JRE) está compuesto por dos importantes áreas, la primera son las clases que conforman el API de java y la segunda es la JVM.
 
@@ -37,7 +27,39 @@ Este ambiente de ejecución para aplicaciones Java (JRE) está compuesto por dos
 
 ---
 
+###### JVM
+
+**J**ava **V**irtual **M**achine o máquina virtual Java ejecuta instrucciones generadas por un compilador Java, es decir interpreta el código bytecode *(lo que "compilamos" con javac)* y un entorno de ejecución que permite ejecutar estos archivos de clase Java en *"cualquier"* plataforma, no importando el origen dónde fueron desarrollados originalmente.
+
+Cuando se *"compila"* el código del lenguaje Java no lo hace a un lenguaje máquina, sino a un intermedio denominado **bytecode** y este es el que ejecuta nuestra máquina virtual de Java. La premisa es que el código se pueda ejecutar en cualquier sistema operativo, pero esto es relativo siempre y cuando no usemos instrucciones nativas del SO o particularidades especiales de la máquina virtual.
+
+El eslogan es *"Escribe una vez, ejecuta en todas partes"* *("Write once, write everywhere")*
+
+---
+
 #### JDK
+
+**J**ava **D**evelopment **K**it, en español sería Herramienta de Desarrollo Java, aquí encontramos herramientas como *javac* que es el que nos permite poder *"compilar"* nuestros archivos *".java"* *(código fuente)*, en archivos *".class"* *(bytecode)* y estos son los archivos que puede interpretar la *JVM* y ejecutará nuestros programas en *"cualquier"* máquina que tenga *JRE*
+
+Algunas de los comandos disponibles al instalar el *JDK*, son:
+
+- jar: crear y gestionar **JAR** (Java Archive files) - *(Java archive tool)*
+- java: ejecutar aplicaciones *Java* - *(Java application launcher)*
+- javac: compilador de *Java* - *(Java compiler)*
+- javadoc: Generador de documentación *API* - *(Java API documentation generator)*
+- javah: generador de header y stubs C, ayuda a crear métodos nativos - *(C header and stub file generator)*
+- javap: decompilador de *bytecode* (archivos *.class*) - *(Java class file disassembler)*
+- jcmd: diagnóstico de la *JVM*
+- jconsole: monitorización de la *JVM* por medio de *JMS* ya sean remotas o locales - *(J2SE Monitoring and Management Console)*
+- jdb: *Java Debugger*
+- jps:Lista las *JVM's* de un sistema - *(Java Virtual Machine Process Status Tool)*
+- jstat: recolecta y muestra estádisticas de rendimiento - *(Java Virtual Machine statistics monitoring tool)*
+- jhat: Convierte archivos *heap dump* en servidores web para poder navegar sobre este - *(Java Heap Analysis Tool)*
+- jmap: mapas de memoria de un proceso - *(memory map)*
+- jstack: Mustra un stack trace de hilos de un proceso - *(stack trace)*
+- jjs: shell de Nashorn
+
+[Referencia](https://www.java.com/es/download/faq/techinfo.xml)
 
 ---
 
@@ -113,6 +135,38 @@ La asignación se hace por medio del signo de **"="**, debe entenderse que esto 
 ---
 
 #### Estructuras de control
+
+Las esctructuas de control son bloques de contrucción básicos de cualquier programa. Y estas estructuras de control podriamos dividirlas en dos: condicionales y repetitivas.
+
+##### Condicionales
+
+Esta estructua de control condiconal o selectiva, nos permite decidir que ejecutar y qué no en un programa, dependiendo del resultado de una **operación booleana**. Esto quiere decir:
+
+- Si hacemos una condicional simple
+```
+A es igual 4
+B es igual 6
+Si (A es menor qué B) Entonces:
+    // hará las acciones que estén aquí cuando se cumpla la condición booleana y resulte en TRUE
+    Mostrar ("A es menor que B")
+```
+
+
+
+- Si hacemos una condicional doble
+
+```
+A es igual 4
+B es igual 6
+Si (A es menor qué B) Entonces:
+    // hará las acciones que estén aquí cuando se cumpla la condición booleana y resulte en TRUE
+    Mostrar ("A es menor que B")
+Sino entonces:
+    // hará las acciones que estén aquí, cuando la condición booleana resulto en FALSE
+    Mostrar ("A no es menor que B")
+```
+
+
 
 ---
 
