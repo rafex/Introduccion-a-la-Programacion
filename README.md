@@ -136,6 +136,38 @@ La asignación se hace por medio del signo de **"="**, debe entenderse que esto 
 
 #### Estructuras de control
 
+Las esctructuas de control son bloques de contrucción básicos de cualquier programa. Y estas estructuras de control podriamos dividirlas en dos: condicionales y repetitivas.
+
+##### Condicionales
+
+Esta estructua de control condiconal o selectiva, nos permite decidir que ejecutar y qué no en un programa, dependiendo del resultado de una **operación booleana**. Esto quiere decir:
+
+- Si hacemos una condicional simple
+```
+A es igual 4
+B es igual 6
+Si (A es menor qué B) Entonces:
+    // hará las acciones que estén aquí cuando se cumpla la condición booleana y resulte en TRUE
+    Mostrar ("A es menor que B")
+```
+
+
+
+- Si hacemos una condicional doble
+
+```
+A es igual 4
+B es igual 6
+Si (A es menor qué B) Entonces:
+    // hará las acciones que estén aquí cuando se cumpla la condición booleana y resulte en TRUE
+    Mostrar ("A es menor que B")
+Sino entonces:
+    // hará las acciones que estén aquí, cuando la condición booleana resulto en FALSE
+    Mostrar ("A no es menor que B")
+```
+
+
+
 ---
 
 #### Camel case
