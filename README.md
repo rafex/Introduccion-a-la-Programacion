@@ -149,7 +149,7 @@ Esta estructua de control condiconal o selectiva, nos permite decidir que ejecut
 A es igual 4
 B es igual 6
 Si (A es menor qué B) Entonces:
-    // hará las acciones que estén aquí cuando se cumpla la condición booleana y resulte en TRUE
+    // hará las acciones que estén aquí cuando se cumpla la condición booleana y resulte en verdadera (TRUE)
     Mostrar ("A es menor que B")
 ```
 
@@ -161,10 +161,10 @@ Si (A es menor qué B) Entonces:
 A es igual 4
 B es igual 6
 Si (A es menor qué B) Entonces:
-    // hará las acciones que estén aquí cuando se cumpla la condición booleana y resulte en TRUE
+    // hará las acciones que estén aquí cuando se cumpla la condición booleana y resulte en verdadera (TRUE)
     Mostrar ("A es menor que B")
 Sino entonces:
-    // hará las acciones que estén aquí, cuando la condición booleana resulto en FALSE
+    // hará las acciones que estén aquí, cuando la condición booleana resulto en falsa (FALSE)
     Mostrar ("A no es menor que B")
 ```
 
@@ -175,6 +175,10 @@ Y en *Java* sería así la sintaxis para la condición simple:
 ```java
 int a = 4;
 int b = 6;
+// la estructura es: if(condición booleana) {
+//  bloque de instrucciones a relizar si se cumplio la condición
+// ....
+// }
 if(a < b){
     System.out.println("A es menor que B");
 }
@@ -185,6 +189,13 @@ Y en *Java* sería así la sintaxis para la condición doble:
 ```java
 int a = 4;
 int b = 6;
+// la estructura es: if(condición booleana) {
+//  bloque de instrucciones a relizar si se cumplio la condición
+// ....
+// } else {
+//  bloque de instrucciones a relizar si NO se cumplio la condición
+// }
+//
 if(a < b){
     System.out.println("A es menor que B");
 }else{
@@ -215,6 +226,11 @@ Y en *Java* sería así la sintaxis de la selección multiple:
 
 ```java
 int a = 2;
+// la estructura es: switch(condición booleana) {
+//  caso 1..:
+//  caso ..N:
+//  default ...:
+// }
 switch(a){
     case 1:
         break;
@@ -228,6 +244,63 @@ switch(a){
         break;
 }
 ```
+
+##### Ciclos o blucles
+
+Estas estructuras repiten un bloque de instrucciones mientras que el resultado de la operación booleana sea verdadera (TRUE).
+
+Esto quiere decir:
+
+##### While
+
+```
+A es igual a 1
+Mientras (A es menor que 100) Entonces:
+    // se ejecutara las instrucciones N veces siempre y cuando cumpla la condición
+    A = A + 1
+```
+
+![diagrama de flujo while](https://raw.githubusercontent.com/rafex/Introduccion-a-la-Programacion/master/documentacion/imagenes/while.png)
+
+Y en *Java* sería así la sintaxis del bucle mientras:
+
+```java
+int a = 1;
+// la estructura es: while(condición booleana) {
+//  intrucciones que se repertiran N veces siempre que se cumpla la condición
+// }
+while (a<100){
+    a = a + 1;
+}
+```
+
+##### Do-While
+
+```
+A es igual a 1
+Hacer
+    // se ejecutara las instrucciones por lo menos UNA vez y si cumple la condición se ejecutara N veces hasta que el resultado sea falso en la operación booleana
+    A = A + 1
+Mientras (A es menor que 100) Entonces:
+
+```
+
+![diagrama de flujo do while](https://raw.githubusercontent.com/rafex/Introduccion-a-la-Programacion/master/documentacion/imagenes/do-while.png)
+
+Y en *Java* sería así la sintaxis del bucle hacer mientras:
+
+```java
+int a = 1;
+// la estructura es:  do {
+//  intrucciones que se ejecutarn por lo menos UNA vez y se repertiran N veces siempre que se cumpla la condición.
+// }while(condición booleana);
+do{
+    a = a + 1;
+}
+while (a<100);
+```
+
+
 ---
 
 #### Camel case
