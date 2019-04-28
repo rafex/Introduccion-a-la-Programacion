@@ -151,7 +151,7 @@ Si (A es menor qué B) Entonces:
     Mostrar ("A es menor que B")
 ```
 
-
+![diagrama de flujo if](https://raw.githubusercontent.com/rafex/Introduccion-a-la-Programacion/master/documentacion/imagenes/if.png)
 
 - Si hacemos una condicional doble
 
@@ -166,8 +166,29 @@ Sino entonces:
     Mostrar ("A no es menor que B")
 ```
 
+![diagrama de flujo if else](https://raw.githubusercontent.com/rafex/Introduccion-a-la-Programacion/master/documentacion/imagenes/if-else.png)
 
+Y en *Java* sería así para la condición simple:
 
+```java
+int a = 4;
+int b = 6;
+if(a < b){
+    System.out.println("A es menor que B");
+}
+```
+
+Y en *Java* sería así para la condición doble:
+
+```java
+int a = 4;
+int b = 6;
+if(a < b){
+    System.out.println("A es menor que B");
+}else{
+    System.out.println("A no es menor que B");
+}
+```
 ---
 
 #### Camel case
