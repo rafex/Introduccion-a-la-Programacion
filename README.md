@@ -260,7 +260,7 @@ Mientras (A es menor que 100) Entonces:
     A = A + 1
 ```
 
-![diagrama de flujo while](https://raw.githubusercontent.com/rafex/Introduccion-a-la-Programacion/master/documentacion/imagenes/while.png)
+![diagrama de flujo while](documentacion/imagenes/while.png)
 
 Y en *Java* sería así la sintaxis del bucle mientras:
 
@@ -285,7 +285,7 @@ Mientras (A es menor que 100) Entonces:
 
 ```
 
-![diagrama de flujo do while](https://raw.githubusercontent.com/rafex/Introduccion-a-la-Programacion/master/documentacion/imagenes/do-while.png)
+![diagrama de flujo do while](documentacion/imagenes/do-while.png)
 
 Y en *Java* sería así la sintaxis del bucle hacer mientras:
 
