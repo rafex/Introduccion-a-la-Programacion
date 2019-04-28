@@ -1,4 +1,4 @@
-# Prólogo
+repetiran# Prólogo
 Retomo en mi vida la parte de enseñar, sé lo complicado que es encontrar cursos en el idioma español y sobre todo que estén al alcance de uno (ya sea distancia, precio y tiempo).
 
 Al lenguaje **Java** le tengo mucho cariño ya que me abrio muchas puertas laboralmente, fue la primera certificación que obtuve en mi vida y ha sido la que me dió pie a querer saber más de diferentes cosas.
@@ -8,7 +8,7 @@ Espero que con esto pueda ayudar a más personas a aprender y sobre todo poder t
 ---
 
 # Introducción a la Programación
-Hoy en día utilizamos diferentes programas en la vida diaria, ya sea en nuestra computadora personal (o laboral) o teléfono inteligente. Aplicaciones para escribir, contar, llevar un registro, interacción social, ver vídeos, juegos, etc. Entonces, si ya usamos tantos programas en el día a día, ¿por qué no crear uno propio?.
+Hoy en día utilizamos diferentes programas en la vida diaria, ya sea en nuestra computadora personal (o laboral) o teléfono inteligente. Aplicaciones para escribir, contar, llevar un registro, interacción social, ver video, juegos, etc. Entonces, si ya usamos tantos programas en el día a día, ¿por qué no crear uno propio?.
 
 Para dar respuesta a esa pregunta, es muy simple. Hay que aprender a programar, para ello en este curso de introducción a la programación basado en *Java* iniciaremos este hito en la vida de los que desean aprender para lograr crear una aplicación propia.
 
@@ -56,7 +56,7 @@ Algunas de los comandos disponibles al instalar el *JDK*, son:
 - jstat: recolecta y muestra estádisticas de rendimiento - *(Java Virtual Machine statistics monitoring tool)*
 - jhat: Convierte archivos *heap dump* en servidores web para poder navegar sobre este - *(Java Heap Analysis Tool)*
 - jmap: mapas de memoria de un proceso - *(memory map)*
-- jstack: Mustra un stack trace de hilos de un proceso - *(stack trace)*
+- jstack: Muestra un stack trace de hilos de un proceso - *(stack trace)*
 - jjs: shell de Nashorn
 
 [Referencia](https://www.java.com/es/download/faq/techinfo.xml)
@@ -102,7 +102,7 @@ final int IVA=16;
 ---
 
 ##### Asignación
-Una vez que la variable es declarada se puede asignar un dato/valo con la siguiente estructura:
+Una vez que la variable es declarada se puede asignar un dato/valor con la siguiente estructura:
 
 > *nombre_variable=expresion_o_valor*
 
@@ -136,11 +136,11 @@ La asignación se hace por medio del signo de **"="**, debe entenderse que esto 
 
 #### Estructuras de control
 
-Las esctructuas de control son bloques de contrucción básicos de cualquier programa. Y estas estructuras de control podriamos dividirlas en dos: condicionales y repetitivas.
+Las estructuras de control son bloques de contrucción básicos de cualquier programa. Y estas estructuras de control podriamos dividirlas en dos: condicionales y repetitivas.
 
 ##### Condicionales
 
-Esta estructua de control condiconal o selectiva, nos permite decidir que ejecutar y qué no en un programa, dependiendo del resultado de una **operación booleana**. Esto quiere decir:
+Esta estrutctura de control condicional o selectiva, nos permite decidir que ejecutar y qué no en un programa, dependiendo del resultado de una **operación booleana**. Esto quiere decir:
 
 ###### IF-ELSE
 
@@ -176,7 +176,7 @@ Y en *Java* sería así la sintaxis para la condición simple:
 int a = 4;
 int b = 6;
 // la estructura es: if(condición booleana) {
-//  bloque de instrucciones a relizar si se cumplio la condición
+//  bloque de instrucciones a realizar si se cumplio la condición
 // ....
 // }
 if(a < b){
@@ -190,10 +190,10 @@ Y en *Java* sería así la sintaxis para la condición doble:
 int a = 4;
 int b = 6;
 // la estructura es: if(condición booleana) {
-//  bloque de instrucciones a relizar si se cumplio la condición
+//  bloque de instrucciones a realizar si se cumplio la condición
 // ....
 // } else {
-//  bloque de instrucciones a relizar si NO se cumplio la condición
+//  bloque de instrucciones a realizar si NO se cumplio la condición
 // }
 //
 if(a < b){
@@ -233,14 +233,19 @@ int a = 2;
 // }
 switch(a){
     case 1:
+        System.out.println("Entraste al caso 1");
         break;
     case 2:
+        System.out.println("Entraste al caso 2");
         break;
     case 3:
+        System.out.println("Entraste al caso 3");
         break;
     case 4:
+        System.out.println("Entraste al caso 4");
         break;
     default:
+        System.out.println("Entraste al caso predefinido");
         break;
 }
 ```
@@ -256,7 +261,7 @@ Esto quiere decir:
 ```
 A es igual a 1
 Mientras (A es menor que 100) Entonces:
-    // se ejecutara las instrucciones N veces siempre y cuando cumpla la condición
+    // se ejecutará las instrucciones N veces siempre y cuando cumpla la condición
     A = A + 1
 ```
 
@@ -267,7 +272,7 @@ Y en *Java* sería así la sintaxis del bucle mientras:
 ```java
 int a = 1;
 // la estructura es: while(condición booleana) {
-//  intrucciones que se repertiran N veces siempre que se cumpla la condición
+//  intrucciones que se repetiran N veces siempre que se cumpla la condición
 // }
 while (a<100){
     a = a + 1;
@@ -279,7 +284,7 @@ while (a<100){
 ```
 A es igual a 1
 Hacer
-    // se ejecutara las instrucciones por lo menos UNA vez y si cumple la condición se ejecutara N veces hasta que el resultado sea falso en la operación booleana
+    // se ejecutará las instrucciones por lo menos UNA vez y si cumple la condición se ejecutará N veces hasta que el resultado sea falso en la operación booleana
     A = A + 1
 Mientras (A es menor que 100) Entonces:
 
@@ -292,7 +297,7 @@ Y en *Java* sería así la sintaxis del bucle hacer mientras:
 ```java
 int a = 1;
 // la estructura es:  do {
-//  intrucciones que se ejecutarn por lo menos UNA vez y se repertiran N veces siempre que se cumpla la condición.
+//  intrucciones que se ejecutará por lo menos UNA vez y se repetiran N veces siempre que se cumpla la condición.
 // }while(condición booleana);
 do{
     a = a + 1;
@@ -316,7 +321,7 @@ Y en *Java* sería así la sintaxis del Para hasta:
 ```java
 int a = 1;
 // la estructura es:  for ([INICIALIZACIÓN] ; [OPERACION BOOLEANA] ; [INCREMENTO O DECREMENTO]){
-//  Las instrucciones aquí se ejecutaran hasta que no se cumpla más la condición
+//  Las instrucciones aquí se ejecutarán hasta que no se cumpla más la condición
 // }
 for(int i = 1; i <= 100 ; i = i +1){
     a = a + 1;
@@ -380,7 +385,7 @@ En *Java* existen 4 tipos:
 - protected
 - default (por defecto)
 
-Sino escribimos ningun modificador este toma el nivel de acceso *default*
+Sino escribimos ningún modificador este toma el nivel de acceso *default*
 Ejemplo:
 ```java
 // en una clase sería así
@@ -444,7 +449,7 @@ La visibilidad de los modificadores de acceso es la siguiente:
 ---
 
 #### Datos primitivos
-En Java solo existen 8 tipos de datos primitivos, que se claifican de la siguiente manera:
+En Java solo existen 8 tipos de datos primitivos, que se clasifican de la siguiente manera:
 
 - Números enteros (byte, short, int, long).
 - Números reales (float, double).
@@ -462,7 +467,7 @@ En Java solo existen 8 tipos de datos primitivos, que se claifican de la siguien
 | char    | 16 bits | '\u0000'              | '\uffff'             |
 | boolean | -       |                       |                      |
 
-En los datos primitivos no existe alguno en el cual pueda representar una cadena de carcateres para ello se debe usar un objeto llamado *String*
+En los datos primitivos no existe alguno en el cual pueda representar una cadena de caracteres para ello se debe usar un objeto llamado *String*
 
 ---
 
@@ -497,7 +502,7 @@ En los datos primitivos no existe alguno en el cual pueda representar una cadena
 
 ---
 
-### Metodos
+### Métodos
 
 ---
 
