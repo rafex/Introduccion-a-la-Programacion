@@ -153,7 +153,7 @@ Si (A es menor qué B) Entonces:
     Mostrar ("A es menor que B")
 ```
 
-![diagrama de flujo if](https://raw.githubusercontent.com/rafex/Introduccion-a-la-Programacion/master/documentacion/imagenes/if.png)
+![diagrama de flujo if](documentacion/imagenes/if.png)
 
 - Si hacemos una condicional doble
 
@@ -168,7 +168,7 @@ Sino entonces:
     Mostrar ("A no es menor que B")
 ```
 
-![diagrama de flujo if else](https://raw.githubusercontent.com/rafex/Introduccion-a-la-Programacion/master/documentacion/imagenes/if-else.png)
+![diagrama de flujo if else](documentacion/imagenes/if-else.png)
 
 Y en *Java* sería así la sintaxis para la condición simple:
 
@@ -220,7 +220,7 @@ Conmutador (A)
         Mostrar ("Entraste al caso predefinido")
 ```
 
-![diagrama de flujo switch](https://raw.githubusercontent.com/rafex/Introduccion-a-la-Programacion/master/documentacion/imagenes/switch.png)
+![diagrama de flujo switch](documentacion/imagenes/switch.png)
 
 Y en *Java* sería así la sintaxis de la selección multiple:
 
@@ -300,6 +300,28 @@ do{
 while (a<100);
 ```
 
+##### For
+
+```
+A es igual a 1
+Para (Inicia i es igual a 0; Hasta que i es menos o igual a 100; aumentamos i más 1)
+    // las intrucciones se realizaran N veces hasta que se cumpla la condición booleana
+    A = A + 1
+```
+
+![diagrama de flujo for](documentacion/imagenes/for.png)
+
+Y en *Java* sería así la sintaxis del Para hasta:
+
+```java
+int a = 1;
+// la estructura es:  for ([INICIALIZACIÓN] ; [OPERACION BOOLEANA] ; [INCREMENTO O DECREMENTO]){
+//  Las instrucciones aquí se ejecutaran hasta que no se cumpla más la condición
+// }
+for(int i = 1; i <= 100 ; i = i +1){
+    a = a + 1;
+}
+```
 
 ---
 
