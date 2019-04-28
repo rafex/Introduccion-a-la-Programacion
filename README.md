@@ -142,6 +142,8 @@ Las esctructuas de control son bloques de contrucción básicos de cualquier pro
 
 Esta estructua de control condiconal o selectiva, nos permite decidir que ejecutar y qué no en un programa, dependiendo del resultado de una **operación booleana**. Esto quiere decir:
 
+###### IF-ELSE
+
 - Si hacemos una condicional simple
 ```
 A es igual 4
@@ -168,7 +170,7 @@ Sino entonces:
 
 ![diagrama de flujo if else](https://raw.githubusercontent.com/rafex/Introduccion-a-la-Programacion/master/documentacion/imagenes/if-else.png)
 
-Y en *Java* sería así para la condición simple:
+Y en *Java* sería así la sintaxis para la condición simple:
 
 ```java
 int a = 4;
@@ -178,7 +180,7 @@ if(a < b){
 }
 ```
 
-Y en *Java* sería así para la condición doble:
+Y en *Java* sería así la sintaxis para la condición doble:
 
 ```java
 int a = 4;
@@ -187,6 +189,43 @@ if(a < b){
     System.out.println("A es menor que B");
 }else{
     System.out.println("A no es menor que B");
+}
+```
+
+###### Switch
+
+```
+A es igual a 2
+Conmutador (A)
+    Caso 1:
+        Mostrar ("Entraste al caso 1")
+    Case 2:
+        Mostrar ("Entraste al caso 2")
+    Caso 3:
+        Mostrar ("Entraste al caso 3")
+    Caso 4:
+        Mostrar ("Entraste al caso 4")
+    Caso predefinido:
+        Mostrar ("Entraste al caso predefinido")
+```
+
+![diagrama de flujo switch](https://raw.githubusercontent.com/rafex/Introduccion-a-la-Programacion/master/documentacion/imagenes/switch.png)
+
+Y en *Java* sería así la sintaxis de la selección multiple:
+
+```java
+int a = 2;
+switch(a){
+    case 1:
+        break;
+    case 2:
+        break;
+    case 3:
+        break;
+    case 4:
+        break;
+    default:
+        break;
 }
 ```
 ---
