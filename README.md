@@ -12,6 +12,17 @@
     - [Condicionales](#condicionales)
         - [If/else](#if)
         - [Switch](#switch)
+    - [Ciclos/Bucles](#bucles)
+        - [While](#while)
+        - [Do/While](#do)
+        - [For](#for)
+5. [Camel Case](#camel)
+6. [Palabras reservadas](#reservadas)
+7. [Modificadores de acceso](#modificadores)
+    - [Static](#static)
+8. [Datos primitivos](#primitivos)
+9. [Operadores lógicos](#logicos)
+10. [Operadores aritméticos](#aritmeticos)
 10. [Objetos](#objetos)
 
 # <a name="prologo"></a>Prólogo
@@ -150,15 +161,15 @@ La asignación se hace por medio del signo de **"="**, debe entenderse que esto 
 
 ---
 
-#### <a name="control"></a>Estructuras de control
+### <a name="control"></a>Estructuras de control
 
 Las estructuras de control son bloques de contrucción básicos de cualquier programa. Y estas estructuras de control podriamos dividirlas en dos: condicionales y repetitivas.
 
-##### <a name="condicionales"></a>Condicionales
+#### <a name="condicionales"></a>Condicionales
 
 Esta estrutctura de control condicional o selectiva, nos permite decidir que ejecutar y qué no en un programa, dependiendo del resultado de una **operación booleana**. Esto quiere decir:
 
-###### <a name="if"></a>IF-ELSE
+##### <a name="if"></a>IF-ELSE
 
 - Si hacemos una condicional simple
 ```
@@ -219,7 +230,7 @@ if(a < b){
 }
 ```
 
-###### <a name="switch"></a>Switch
+##### <a name="switch"></a>Switch
 
 ```
 A es igual a 2
@@ -266,13 +277,13 @@ switch(a){
 }
 ```
 
-##### <a name="bucles"></a>Ciclos o blucles
+#### <a name="bucles"></a>Ciclos o blucles
 
 Estas estructuras repiten un bloque de instrucciones mientras que el resultado de la operación booleana sea verdadera (TRUE).
 
 Esto quiere decir:
 
-##### <a name="while"></a>While
+#### <a name="while"></a>While
 
 ```
 A es igual a 1
@@ -295,7 +306,7 @@ while (a<100){
 }
 ```
 
-##### <a name="do"></a>Do-While
+#### <a name="do"></a>Do-While
 
 Esta condición se ejecutará por lo menos ***UNA* vez y después iniciará el ciclo siempre que se cumpla la condición booleana:
 
@@ -323,7 +334,7 @@ do{
 while (a<100);
 ```
 
-##### <a name="for"></a>For
+#### <a name="for"></a>For
 
 Este ciclo o bucle se ejecutara **HASTA** que no se cumpla más la condición:
 
@@ -356,7 +367,7 @@ for(;  ; ){
 
 ---
 
-#### <a name="camel"></a>Camel case
+### <a name="camel"></a>Camel case
 Camel case se utiliza para dar una estructura al texto que se escribe en frases o palabras compuestas, por ejemplo:
 
 > *usuarioNuevo*
@@ -386,7 +397,7 @@ int edadUsuario;
 
 ---
 
-#### <a name="reservadas"></a>Palabras reservadas
+### <a name="reservadas"></a>Palabras reservadas
 
 | reservada | reservada | reservada  | reservada | reservada    |
 |-----------|-----------|------------|-----------|--------------|
@@ -404,7 +415,7 @@ int edadUsuario;
 
 ---
 
-#### <a name="modificadores"></a>Modificadores de acceso
+### <a name="modificadores"></a>Modificadores de acceso
 En *Java* existen 4 tipos:
 - public
 - private
@@ -472,7 +483,7 @@ La visibilidad de los modificadores de acceso es la siguiente:
 | default                 | X                 | X                            |                           |                            |
 | private                 | X                 |                              |                           |                            |
 
-##### <a name="static"></a>Static
+#### <a name="static"></a>Static
 
 Static es un *"modificador de acceso"* que si traducimos literalmente nos daría "estatico", sin embargo no se refiere a un valor que es constante sino a la visibilidad de este fuera de la clase, así que son accesibles desde el nombre de la clase sin necesidad de intanciar. Así que esto implica que no será necesario crear un objeto para acceder a estos atributos y/o métodos.
 
@@ -504,7 +515,7 @@ class Ejemplo {
 
 ---
 
-#### <a name="primitivos"></a>Datos primitivos
+### <a name="primitivos"></a>Datos primitivos
 En Java solo existen 8 tipos de datos primitivos, que se clasifican de la siguiente manera:
 
 - Números enteros (byte, short, int, long).
@@ -527,7 +538,7 @@ En los datos primitivos no existe alguno en el cual pueda representar una cadena
 
 ---
 
-#### <a name="logicos"></a>Operadores lógicos
+### <a name="logicos"></a>Operadores lógicos
 
 | OPERADOR     | DESCRIPCIÓN                                |
 |--------------|--------------------------------------------|
@@ -746,8 +757,6 @@ public class Principal {
 }
 ```
 
-
-
 #### <a name="metodos"></a>Métodos
 
 Los métodos le definen el comportamiento a los objetos de la clase, estos métodos pueden hacer uso o no de los atributos de la clase, así como crear variables dentro del método para realizar su cometido. La estructura de un método en *Java* es la siguiente:
@@ -786,7 +795,7 @@ public class IdentificadorClase {
 }
 ```
 
-###### <a name="main"></a>Método principal o main
+##### <a name="main"></a>Método principal o main
 
 Este método nos permite iniciar nuestra aplicación *Java*, siendo el punto de entrada y su estructura es la siguiente:
 
