@@ -23,7 +23,7 @@
 8. [Datos primitivos](#primitivos)
 9. [Operadores lógicos](#logicos)
 10. [Operadores aritméticos](#aritmeticos)
-11. [Programción orientada a objetos](#poo)
+11. [Programación orientada a objetos](#poo)
 12. [Clases](#clases)
     - [Constructores](#constructores)
     - [Métodos](#metodos)
@@ -489,7 +489,7 @@ La visibilidad de los modificadores de acceso es la siguiente:
 
 #### <a name="static"></a>Static
 
-Static es un *"modificador de acceso"* que si traducimos literalmente nos daría "estatico", sin embargo no se refiere a un valor que es constante sino a la visibilidad de este fuera de la clase, así que son accesibles desde el nombre de la clase sin necesidad de intanciar. Así que esto implica que no será necesario crear un objeto para acceder a estos atributos y/o métodos.
+Static es un *"modificador de acceso"* que si traducimos literalmente nos daría "estático", sin embargo no se refiere a un valor que es constante sino a la visibilidad de este fuera de la clase, así que son accesibles desde el nombre de la clase sin necesidad de intanciar. Así que esto implica que no será necesario crear un objeto para acceder a estos atributos y/o métodos.
 
 Ejemplo:
 
@@ -524,7 +524,7 @@ En Java solo existen 8 tipos de datos primitivos, que se clasifican de la siguie
 
 - Números enteros (byte, short, int, long).
 - Números reales (float, double).
-- Carácter (char).
+- Caracter (char).
 - Booleano o lógico (boolean), valores true o false.
 
 | Tipo    | Tamaño  | Valor mínimo          | Valor máximo         |
@@ -576,11 +576,11 @@ Como se mencionó en la introducción de este documento, el lenguaje *Java* es o
 En la vida real todos los objetos tienen una serie de características y un comportamiento. Así que un objeto contiene:
 
 - Campos o atributos: componentes de un objeto que almacenan datos, por ejemplo tamaño, edad, sexo, altura, nacionalidad, ancho, color, dimensión, etc...
-- Rutinas o métodos: son el comportamiento de un objeto que lleva a cabo una determinada acción o tarea con los atributos, por ejemplo calcular edad, calcular la hipotenusa, calcular diametro, calcular área, abrir, cerrar, acelerar, etc...
+- Rutinas o métodos: son el comportamiento de un objeto que lleva a cabo una determinada acción o tarea con los atributos, por ejemplo calcular edad, calcular la hipotenusa, calcular diámetro, calcular área, abrir, cerrar, acelerar, etc...
 
 ### <a name="clases"></a>Clases
 
-Las clases contienen la definición de los objetos, se puede decir que son *"plantillas"* para la creación de objetos. Entonces podemos decir que la clase persona sería la *plantilla* de cada ser humano y está contendría la definición de un ser humano, y cada ser humano sería una *instancia* u *objeto* de la clase persona.
+Las clases contienen la definición de los objetos, se puede decir que son *"plantillas"* para la creación de objetos. Entonces podemos decir que la clase persona sería la *plantilla* de cada ser humano y esta contendría la definición de un ser humano, y cada ser humano sería una *instancia* u *objeto* de la clase persona.
 
 La estructura de una clase es:
 
@@ -723,7 +723,7 @@ public class Principal {
         MiClase miObjetoDeClase; // Declaramos
         miObjetoDeClase = new MiClase(4,"hola"); // Inicializamos, aquí usamos el constructor definido por nosotros
 
-        miObjetoDeClase = new MiClase(); // Esto daría un error porqué ese constructor desaparecío en el momento que creamos nuestro constructor
+        miObjetoDeClase = new MiClase(); // Esto daría un error porqué ese constructor desapareció en el momento que creamos nuestro constructor
 
     }
 }
@@ -782,7 +782,7 @@ public class IdentificadorClase {
 }
 ```
 
-El tipo de retorno puede ser cualquier objeto de *Java*, y solamente cuando el tipo de retorno usemos la palabra reservada *void* (retorno vácio) no séra necesario usar la palabra reservada *return*, así:
+El tipo de retorno puede ser cualquier objeto de *Java*, y solamente cuando el tipo de retorno usemos la palabra reservada *void* (retorno vacío) no será necesario usar la palabra reservada *return*, así:
 
 ```java
 public class IdentificadorClase {
