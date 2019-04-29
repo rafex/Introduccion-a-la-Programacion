@@ -1,8 +1,17 @@
+# Introducción a la programación con Java
 # Indice
+1. [Prólogo](#prologo)
+2. [Introducción](#introduccion)
+    - [JRE](#jre)
+        - [JVM](#jvm)
+    - [JDK](#jdk)
+3. [Variables](#variables)
+    - [Constantes](#constantes)
+    - [Asignación](#asignacion)
+4. [Variables](#variables)
+10. [Objetos](#objetos)
 
-- [Objetos](#objetos)
-
-# Prólogo
+# <a name="prologo"></a>Prólogo
 Retomo en mi vida la parte de enseñar, sé lo complicado que es encontrar cursos en el idioma español y sobre todo que estén al alcance de uno (ya sea distancia, precio y tiempo).
 
 Al lenguaje **Java** le tengo mucho cariño ya que me abrio muchas puertas laboralmente, fue la primera certificación que obtuve en mi vida y ha sido la que me dió pie a querer saber más de diferentes cosas.
@@ -11,7 +20,7 @@ Espero que con esto pueda ayudar a más personas a aprender y sobre todo poder t
 
 ---
 
-# Introducción a la Programación
+# <a name="introduccion"></a>Introducción
 Hoy en día utilizamos diferentes programas en la vida diaria, ya sea en nuestra computadora personal (o laboral) o teléfono inteligente. Aplicaciones para escribir, contar, llevar un registro, interacción social, ver video, juegos, etc. Entonces, si ya usamos tantos programas en el día a día, ¿por qué no crear uno propio?.
 
 Para dar respuesta a esa pregunta, es muy simple. Hay que aprender a programar, para ello en este curso de introducción a la programación basado en *Java* iniciaremos este hito en la vida de los que desean aprender para lograr crear una aplicación propia.
@@ -20,7 +29,7 @@ Para dar respuesta a esa pregunta, es muy simple. Hay que aprender a programar, 
 
 ---
 
-#### JRE
+#### <a name="jre"></a>JRE
 
 **J**ava **R**untime **E**nvironment, en español significa Entorno de Ejecución de Java. El JRE actúa como un «intermediario» entre el sistema y Java.
 
@@ -31,7 +40,7 @@ Este ambiente de ejecución para aplicaciones Java (JRE) está compuesto por dos
 
 ---
 
-###### JVM
+###### <a name="jvm"></a>JVM
 
 **J**ava **V**irtual **M**achine o máquina virtual Java ejecuta instrucciones generadas por un compilador Java, es decir interpreta el código bytecode *(lo que "compilamos" con javac)* y un entorno de ejecución que permite ejecutar estos archivos de clase Java en *"cualquier"* plataforma, no importando el origen dónde fueron desarrollados originalmente.
 
@@ -41,7 +50,7 @@ El eslogan es *"Escribe una vez, ejecuta en todas partes"* *("Write once, write 
 
 ---
 
-#### JDK
+#### <a name="jdk"></a>JDK
 
 **J**ava **D**evelopment **K**it, en español sería Herramienta de Desarrollo Java, aquí encontramos herramientas como *javac* que es el que nos permite poder *"compilar"* nuestros archivos *".java"* *(código fuente)*, en archivos *".class"* *(bytecode)* y estos son los archivos que puede interpretar la *JVM* y ejecutará nuestros programas en *"cualquier"* máquina que tenga *JRE*
 
@@ -67,12 +76,12 @@ Algunas de los comandos disponibles al instalar el *JDK*, son:
 
 ---
 
-#### Variables
+#### <a name="variables"></a>Variables
 Las variables son reservaciones en memoria que se hacen asignando primero el tipo de esta y después el nombre que tendrá. Y en esta variable un programa podrá almacenar algun dato para después ser utilizada dentro del mismo programa.
 
 En *Java* las variables pueden ser datos primitivos u objetos.
 
-##### Declaración de Variables
+##### <a name="declaracion"></a>Declaración de Variables
 Para declarar una variable la estructura es la siguiente:
 
 > *tipo_de_dato nombre_de_la_variable*
@@ -94,7 +103,7 @@ int a,b,c,edad;
 > Restricciones:
 > - No puede usarse una palabra reservada para el nombre de una variables
 
-###### Constantes
+###### <a name="constantes"></a>Constantes
 Una constante es una variable que su valor no puede ser modificado. Para definir una constante en *Java* se requiere utilizar la palabra reservada *final* antes de la declaración de la variable y el nombre de la variable se pone en mayúsculas (esto es por convención y tener un código más limpio), la estructura es la siguiente:
 
 > *final tipo_de_dato NOMBRE_VARIABLE;*
@@ -105,7 +114,7 @@ final int IVA=16;
 ```
 ---
 
-##### Asignación
+##### <a name="asignacion"></a>Asignación
 Una vez que la variable es declarada se puede asignar un dato/valor con la siguiente estructura:
 
 > *nombre_variable=expresion_o_valor*
@@ -138,15 +147,15 @@ La asignación se hace por medio del signo de **"="**, debe entenderse que esto 
 
 ---
 
-#### Estructuras de control
+#### <a name="control"></a>Estructuras de control
 
 Las estructuras de control son bloques de contrucción básicos de cualquier programa. Y estas estructuras de control podriamos dividirlas en dos: condicionales y repetitivas.
 
-##### Condicionales
+##### <a name="condicionales"></a>Condicionales
 
 Esta estrutctura de control condicional o selectiva, nos permite decidir que ejecutar y qué no en un programa, dependiendo del resultado de una **operación booleana**. Esto quiere decir:
 
-###### IF-ELSE
+###### <a name="if"></a>IF-ELSE
 
 - Si hacemos una condicional simple
 ```
@@ -207,7 +216,7 @@ if(a < b){
 }
 ```
 
-###### Switch
+###### <a name="switch"></a>Switch
 
 ```
 A es igual a 2
@@ -254,13 +263,13 @@ switch(a){
 }
 ```
 
-##### Ciclos o blucles
+##### <a name="bucles"></a>Ciclos o blucles
 
 Estas estructuras repiten un bloque de instrucciones mientras que el resultado de la operación booleana sea verdadera (TRUE).
 
 Esto quiere decir:
 
-##### While
+##### <a name="while"></a>While
 
 ```
 A es igual a 1
@@ -283,7 +292,7 @@ while (a<100){
 }
 ```
 
-##### Do-While
+##### <a name="do"></a>Do-While
 
 Esta condición se ejecutará por lo menos ***UNA* vez y después iniciará el ciclo siempre que se cumpla la condición booleana:
 
@@ -311,7 +320,7 @@ do{
 while (a<100);
 ```
 
-##### For
+##### <a name="for"></a>For
 
 Este ciclo o bucle se ejecutara **HASTA** que no se cumpla más la condición:
 
@@ -344,7 +353,7 @@ for(;  ; ){
 
 ---
 
-#### Camel case
+#### <a name="camel"></a>Camel case
 Camel case se utiliza para dar una estructura al texto que se escribe en frases o palabras compuestas, por ejemplo:
 
 > *usuarioNuevo*
@@ -374,7 +383,7 @@ int edadUsuario;
 
 ---
 
-#### Palabras reservadas
+#### <a name="reservadas"></a>Palabras reservadas
 
 | reservada | reservada | reservada  | reservada | reservada    |
 |-----------|-----------|------------|-----------|--------------|
@@ -392,7 +401,7 @@ int edadUsuario;
 
 ---
 
-#### Modificadores de acceso
+#### <a name="modificadores"></a>Modificadores de acceso
 En *Java* existen 4 tipos:
 - public
 - private
@@ -460,7 +469,7 @@ La visibilidad de los modificadores de acceso es la siguiente:
 | default                 | X                 | X                            |                           |                            |
 | private                 | X                 |                              |                           |                            |
 
-##### Static
+##### <a name="static"></a>Static
 
 Static es un *"modificador de acceso"* que si traducimos literalmente nos daría "estatico", sin embargo no se refiere a un valor que es constante sino a la visibilidad de este fuera de la clase, así que son accesibles desde el nombre de la clase sin necesidad de intanciar. Así que esto implica que no será necesario crear un objeto para acceder a estos atributos y/o métodos.
 
@@ -492,7 +501,7 @@ class Ejemplo {
 
 ---
 
-#### Datos primitivos
+#### <a name="primitivos"></a>Datos primitivos
 En Java solo existen 8 tipos de datos primitivos, que se clasifican de la siguiente manera:
 
 - Números enteros (byte, short, int, long).
@@ -515,7 +524,7 @@ En los datos primitivos no existe alguno en el cual pueda representar una cadena
 
 ---
 
-#### Operadores lógicos
+#### <a name="logicos"></a>Operadores lógicos
 
 | OPERADOR     | DESCRIPCIÓN                                |
 |--------------|--------------------------------------------|
@@ -528,7 +537,7 @@ En los datos primitivos no existe alguno en el cual pueda representar una cadena
 
 ---
 
-### Operadores aritméticos
+### <a name="aritmeticos"></a>Operadores aritméticos
 
 | OPERADOR | DESCRIPCIÓN                                                                          |
 |----------|--------------------------------------------------------------------------------------|
@@ -542,7 +551,7 @@ En los datos primitivos no existe alguno en el cual pueda representar una cadena
 
 ---
 
-### Programación orientada a objetos o POO
+### <a name="poo"></a>Programación orientada a objetos o POO
 
 Como se mencionó en la introducción de este documento, el lenguaje *Java* es orientado a objetos, por lo que podremos aplicar lo que dice este paradigma entre estas características y beneficios son: *herencia, cohesión, abstracción, polimorfismo, acoplamiento y encapsulamiento*.
 
@@ -551,7 +560,7 @@ En la vida real todos los objetos tienen una serie de características y un comp
 - Campos o atributos: componentes de un objeto que almacenan datos, por ejemplo tamaño, edad, sexo, altura, nacionalidad, ancho, color, dimensión, etc...
 - Rutinas o métodos: son el comportamiento de un objeto que lleva a cabo una determinada acción o tarea con los atributos, por ejemplo calcular edad, calcular la hipotenusa, calcular diametro, calcular área, abrir, cerrar, acelerar, etc...
 
-### Clases
+### <a name="clases"></a>Clases
 
 Las clases contienen la definición de los objetos, se puede decir que son *"plantillas"* para la creación de objetos. Entonces podemos decir que la clase persona sería la *plantilla* de cada ser humano y está contendría la definición de un ser humano, y cada ser humano sería una *instancia* u *objeto* de la clase persona.
 
@@ -642,7 +651,7 @@ public class Persona {
 }
 ```
 
-#### Constructores
+#### <a name="constructores"></a>Constructores
 
 Los constructores se ejecutan en el momento en que se crea un instancia de la clase, o sea cuando usamos la palabra reservada *new*. Cuando en una clase no especificamos ningún tipo de constructor, el compilador añade uno predeterminado público por omisión sin parámetros, el cual no hace nada mas que crear el objeto e inicializar los atributos de acuerdo al tipo de datos, sin embargo en el momento que definimos un constructor desaparece el constructor predeterminado (default).
 
@@ -736,7 +745,7 @@ public class Principal {
 
 
 
-#### Métodos
+#### <a name="metodos"></a>Métodos
 
 Los métodos le definen el comportamiento a los objetos de la clase, estos métodos pueden hacer uso o no de los atributos de la clase, así como crear variables dentro del método para realizar su cometido. La estructura de un método en *Java* es la siguiente:
 
@@ -774,7 +783,7 @@ public class IdentificadorClase {
 }
 ```
 
-###### Método principal o main
+###### <a name="main"></a>Método principal o main
 
 Este método nos permite iniciar nuestra aplicación *Java*, siendo el punto de entrada y su estructura es la siguiente:
 
