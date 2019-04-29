@@ -23,7 +23,11 @@
 8. [Datos primitivos](#primitivos)
 9. [Operadores lógicos](#logicos)
 10. [Operadores aritméticos](#aritmeticos)
-10. [Objetos](#objetos)
+11. [Programción orientada a objetos](#poo)
+12. [Clases](#clases)
+    - [Constructores](#constructores)
+    - [Métodos](#metodos)
+13. [Objetos](#objetos)
 
 # <a name="prologo"></a>Prólogo
 Retomo en mi vida la parte de enseñar, sé lo complicado que es encontrar cursos en el idioma español y sobre todo que estén al alcance de uno (ya sea distancia, precio y tiempo).
@@ -308,7 +312,7 @@ while (a<100){
 
 #### <a name="do"></a>Do-While
 
-Esta condición se ejecutará por lo menos ***UNA* vez y después iniciará el ciclo siempre que se cumpla la condición booleana:
+Esta condición se ejecutará por lo menos *UNA* vez y después iniciará el ciclo siempre que se cumpla la condición booleana:
 
 ```
 A es igual a 1
