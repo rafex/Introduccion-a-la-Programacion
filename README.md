@@ -1,4 +1,8 @@
-repetiran# Prólogo
+# Indice
+
+- [Objetos](#objetos)
+
+# Prólogo
 Retomo en mi vida la parte de enseñar, sé lo complicado que es encontrar cursos en el idioma español y sobre todo que estén al alcance de uno (ya sea distancia, precio y tiempo).
 
 Al lenguaje **Java** le tengo mucho cariño ya que me abrio muchas puertas laboralmente, fue la primera certificación que obtuve en mi vida y ha sido la que me dió pie a querer saber más de diferentes cosas.
@@ -782,7 +786,7 @@ Este método nos permite iniciar nuestra aplicación *Java*, siendo el punto de 
 
 ---
 
-### Objetos
+### <a name="objetos"></a>Objetos
 
 El objeto es la representación en memoria de la clase, esto lo hace *"tangible"* para su manipulación. Todos los objetos empleados en un programa han de pertenecer a una clase determinada. Así que un objeto es una *instancia* de una clase determinada referenciada por una variable que almacena su dirección en memoria. Cuando decimos que en *Java* no hay punteros realmente a lo que nos referimos es que el programador no los puede ver y manipular a voluntad.
 
