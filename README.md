@@ -8,7 +8,10 @@
 3. [Variables](#variables)
     - [Constantes](#constantes)
     - [Asignación](#asignacion)
-4. [Variables](#variables)
+4. [Estructuras de control](#control)
+    - [Condicionales](#condicionales)
+        - [If/else](#if)
+        - [Switch](#switch)
 10. [Objetos](#objetos)
 
 # <a name="prologo"></a>Prólogo
