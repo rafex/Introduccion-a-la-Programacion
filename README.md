@@ -638,6 +638,100 @@ public class Persona {
 }
 ```
 
+#### Constructores
+
+Los constructores se ejecutan en el momento en que se crea un instancia de la clase, o sea cuando usamos la palabra reservada *new*. Cuando en una clase no especificamos ningún tipo de constructor, el compilador añade uno predeterminado público por omisión sin parámetros, el cual no hace nada mas que crear el objeto e inicializar los atributos de acuerdo al tipo de datos, sin embargo en el momento que definimos un constructor desaparece el constructor predeterminado (default).
+
+Un constructor tiene las siguientes características:
+- Tiene exactamente el mismo nombre que la clases
+- No retorna ningún valor
+- El constructor puede usar todos los modificades de acceso
+
+La sintaxis del constructor sería la siguiente:
+
+
+
+```java
+public class MiClase {
+
+    private int atributo1;
+    private String atributo2;
+
+    // [modificador_de_acceso] MiClase([parametros]){
+    //      intrucciones a realizar al momento de construir el objeto
+    // }
+    public MiClase(int atributo1,String atributo2){
+        this.atributo1 = atributo1;
+        this.atributo2 = atributo2;
+    }
+}
+
+
+```
+
+Y ya usandolo sería así:
+
+```java
+public class MiClase {
+
+    private int atributo1;
+    private String atributo2;
+
+    // al crear este constructor desaparece el constructor predeterminado (default)
+    public MiClase(int atributo1,String atributo2){
+        this.atributo1 = atributo1;
+        this.atributo2 = atributo2;
+    }
+}
+
+public class Principal {
+
+    public static void main(String[] args){
+
+
+        MiClase miObjetoDeClase; // Declaramos
+        miObjetoDeClase = new MiClase(4,"hola"); // Inicializamos, aquí usamos el constructor definido por nosotros
+
+        miObjetoDeClase = new MiClase(); // Esto daría un error porqué ese constructor desaparecío en el momento que creamos nuestro constructor
+
+    }
+}
+```
+
+Para tener el constructor predeterminado y otros constructores sería de la siguiente forma:
+
+```java
+public class MiClase {
+
+    private int atributo1;
+    private String atributo2;
+
+    // este es el constructor predeterminado
+    public MiClase(){
+    }
+
+    public MiClase(int atributo1,String atributo2){
+        this.atributo1 = atributo1;
+        this.atributo2 = atributo2;
+    }
+}
+
+public class Principal {
+
+    public static void main(String[] args){
+
+
+        MiClase miObjetoDeClase; // Declaramos
+        miObjetoDeClase = new MiClase(4,"hola"); // Inicializamos, aquí usamos el constructor definido por nosotros
+
+        miObjetoDeClase = new MiClase(); // Ahora si podemos hacer esto
+
+    }
+}
+```
+
+
+
 #### Métodos
 
 Los métodos le definen el comportamiento a los objetos de la clase, estos métodos pueden hacer uso o no de los atributos de la clase, así como crear variables dentro del método para realizar su cometido. La estructura de un método en *Java* es la siguiente:
@@ -689,3 +783,45 @@ Este método nos permite iniciar nuestra aplicación *Java*, siendo el punto de 
 ---
 
 ### Objetos
+
+El objeto es la representación en memoria de la clase, esto lo hace *"tangible"* para su manipulación. Todos los objetos empleados en un programa han de pertenecer a una clase determinada. Así que un objeto es una *instancia* de una clase determinada referenciada por una variable que almacena su dirección en memoria. Cuando decimos que en *Java* no hay punteros realmente a lo que nos referimos es que el programador no los puede ver y manipular a voluntad.
+
+Ejemplo de crear una instancia de una clase que creamos.
+
+```java
+public class Persona {
+    private Integer edad;
+    private String nombre;
+
+    public Integer getEdad(){
+        return edad;
+    }
+
+    public void setEdad(Integer edad){
+        this.edad = edad;
+    }
+
+    public String getNombre(){
+        return nombre;
+    }
+
+    public void setNombre(String nombre){
+        this.nombre = nombre;
+    }
+}
+
+public class MiPrincipal {
+
+    public static void main(String[] args){
+        Persona objetoPersona; // Declaramos una variable con el nombre objetoPersona de tipo Persona que es una clase
+        objetoPersona = new Persona(); // Aquí hemos inicializado el objeto de la clase Persona;
+
+        objetoPersona.setEdad(30);
+        objetoPersona.setNombre("Jose Jose");
+
+        Persona objetoPersona2 = new Persona(); // Aquí declaramos e inicializamos en una sola línea el objeto
+
+    }
+
+}
+```
