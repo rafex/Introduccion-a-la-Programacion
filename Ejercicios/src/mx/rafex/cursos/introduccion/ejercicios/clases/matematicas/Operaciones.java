@@ -8,6 +8,6 @@ public interface Operaciones {
 
     Double multiplicar(Double... numeros);
 
-    Double divición(Double numerosUno, Double numerosDos);
+    Double divicion(Double numerosUno, Double numerosDos);
 
 }
