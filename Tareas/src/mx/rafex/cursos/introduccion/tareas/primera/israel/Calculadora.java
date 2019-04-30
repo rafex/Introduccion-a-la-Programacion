@@ -5,7 +5,7 @@ public class Calculadora {
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
 		
-		ConstructorSuma miSuma = new ConstructorSuma(8, 26, 8+26);
+		ConstructorSuma miSuma = new ConstructorSuma(8,26);
 
 	}
 
