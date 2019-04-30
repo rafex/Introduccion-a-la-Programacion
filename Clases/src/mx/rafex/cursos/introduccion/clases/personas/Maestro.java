@@ -39,7 +39,7 @@ public class Maestro extends Persona {
     @Override
     public String toString() {
         return "Maestro [profesion=" + profesion + ", gradoDeEstudios=" + gradoDeEstudios + ", getNacionalidad()="
-                + getNacionalidad() + ", getNombre()=" + getNombre() + ", getApellido()=" + getApellido()
+                + getNacionalidad() + ", getNombre()=" + getNombre() + ", getApellido()=" + getApellidoMaterno()
                 + ", getEdad()=" + getEdad() + ", getSexo()=" + getSexo() + ", getFechaNacimiento()="
                 + getFechaNacimiento() + "]";
     }
