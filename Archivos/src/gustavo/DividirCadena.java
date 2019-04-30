@@ -1,3 +1,5 @@
+
+
 package gustavo;
 import java.util.Scanner;
 public class DividirCadena {
@@ -12,6 +14,7 @@ public class DividirCadena {
 		{
 			System.out.println("el dato en la posicion "+i+"es:"+cadenaSeparada[i]);
 		}
+		
 		
 	}
 
