@@ -85,7 +85,7 @@ public class PrincipalBaseDeDatos2 {
     public static void conectarBaseDeDatos() {
         try {
             Class.forName("org.postgresql.Driver");
-            final String url = "jdbc:postgresql://192.168.0.8:5432/rafex";
+            final String url = "jdbc:postgresql://127.0.0.1:5432/rafex";
             conexion = DriverManager.getConnection(url, "externo", "externo123");
 
             System.out.println("Se ha conectado a la base correctamente");
