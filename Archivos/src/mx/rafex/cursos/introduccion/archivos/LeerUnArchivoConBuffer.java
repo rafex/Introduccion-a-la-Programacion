@@ -13,7 +13,7 @@ public class LeerUnArchivoConBuffer {
 
     public static void main(String[] args) {
 
-        final String ubicacionExactaDelArchivo = "/Volumes/@rafex_hdd/job/clientes/cursos/Introduccion-a-la-Programacion/Archivos/src/mx/rafex/cursos/introduccion/archivos/";
+        final String ubicacionExactaDelArchivo = "C:\\Users\\KMMXlen04\\Desktop\\ISRAEL-GITHUB\\Archivos\\src\\mx\\rafex\\cursos\\introduccion\\archivos\\";
         final String nombreDelArchivo = "archivoPruebaEntrada.txt";
         final String rutaMasNombreDeArchivo = ubicacionExactaDelArchivo + nombreDelArchivo;
 
