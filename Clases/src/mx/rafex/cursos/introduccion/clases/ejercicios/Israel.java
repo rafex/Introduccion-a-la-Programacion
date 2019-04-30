@@ -6,22 +6,31 @@ public class Israel {
 		Scanner digitos = new Scanner(System.in);
 		Operacion aritmetica = new Operacion(); 
 		
+		int suma;
+		int resta;
+		int multiplicacion;
+		int division;
+		int exponente;
+		int raiz;
+		int raizcuadrada;
+		
+		
 		
 		System.out.println ("Ingrese que operacion aritmetica quiere realizar");
 		
-		switch() {
+		switch(8) {
 		
-		case 1: int a; digitos.nextInt (1);
+		case 1: int suma; digitos.nextInt (1);
 			
 			System.out.println("La operacion que eligió es Suma");
 				break;
 		
-		case 2: int b; digitos.nextInt (2);
+		case 2: int resta; digitos.nextInt (2);
 			
 			System.out.println("La operacion que eligio es Resta");
 				break;
 		
-		case 3: int c; digitos.nextInt (3);
+		case 3: int ; digitos.nextInt (3);
 			
 			System.out.println("La operacion que eligio es Multiplicacion");
 				break;
@@ -47,6 +56,7 @@ public class Israel {
 				break;
 				
 		case 8: int h; digitos.nextInt (8);		
+		
 			System.out.println("La operacion que eligio es obtener el IVA");
 				break;
 				
