@@ -1,7 +1,10 @@
 package mx.rafex.cursos.introduccion.colecciones;
 
 import java.util.ArrayList;
+import java.util.Iterator;
+import java.util.LinkedList;
 import java.util.List;
+import java.util.Vector;
 
 public class Colecciones2 {
 
@@ -28,6 +31,28 @@ public class Colecciones2 {
 
         for (final String cadena : arrayList)
             System.out.println(cadena);
+
+        System.out.println("****************************************************");
+
+        final LinkedList<String> linkedList = new LinkedList<>();
+        linkedList.add("Ravi");
+        linkedList.add("Vijay");
+        linkedList.add("Ravi");
+        linkedList.add("Ajay");
+
+        linkedList.forEach(System.out::println);
+
+        System.out.println("****************************************************");
+
+        final Vector<String> vector = new Vector<>();
+        vector.add("Ayush");
+        vector.add("Amit");
+        vector.add("Ashish");
+        vector.add("Garima");
+
+        final Iterator<String> iterator = vector.iterator();
+        while (iterator.hasNext())
+            System.out.println(iterator.next());
 
     }
 
