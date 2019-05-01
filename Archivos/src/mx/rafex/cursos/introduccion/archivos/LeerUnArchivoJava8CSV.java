@@ -35,7 +35,7 @@ public class LeerUnArchivoJava8CSV {
 //                System.out.println("skdkfhs" + p);
 //            });
 
-            list = stream.filter(line -> !line.startsWith("line3")).map(String::toUpperCase)
+            list = flujo.filter(line -> !line.startsWith("line3")).map(String::toUpperCase)
                     .collect(Collectors.toList());
 
 //            flujo.forEach(System.out::println);

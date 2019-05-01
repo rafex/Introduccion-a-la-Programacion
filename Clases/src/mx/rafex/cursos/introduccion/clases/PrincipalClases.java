@@ -1,7 +1,10 @@
 package mx.rafex.cursos.introduccion.clases;
 
 import java.time.LocalDate;
+import java.util.Date;
 
+import mx.rafex.cursos.introduccion.clases.personas.Alumno;
+import mx.rafex.cursos.introduccion.clases.personas.Maestro;
 import mx.rafex.cursos.introduccion.clases.personas.Persona;
 import mx.rafex.cursos.introduccion.clases.utilidades.UtilidadFechas;
 
@@ -37,15 +40,15 @@ public class PrincipalClases {
 //
 //        System.out.println(pedro);
 //
-//        Persona persona = new Persona();
-//
-//        persona.setNombre("Rosa");
-//        persona.setEdad(15);
-//        persona.setApellido("Lopez");
-//        persona.setNacionalidad("colombiana");
-//        persona.setSexo('M');
-//        Date fechaNacimientoDate = UtilidadFechas.convertirLocalDateAUtilDate(LocalDate.of(1988, 10, 11));
-//        persona.setFechaNacimiento(fechaNacimientoDate);
+        final Persona persona = new Persona();
+
+        persona.setNombre("Rosa");
+        persona.setEdad(15);
+        persona.setApellidoMaterno("Lopez");
+        persona.setNacionalidad("colombiana");
+        persona.setSexo('M');
+        Date fechaNacimientoDate = UtilidadFechas.convertirLocalDateAUtilDate(LocalDate.of(1988, 10, 11));
+        persona.setFechaNacimiento(fechaNacimientoDate);
 //
 //        System.out.println(persona);
 //
@@ -53,15 +56,21 @@ public class PrincipalClases {
 //
 //        System.out.println(persona);
 //
-//        final Maestro maestro = new Maestro("Raúl", "Arquitecto de Software");
-//
-//        fechaNacimientoDate = UtilidadFechas.convertirLocalDateAUtilDate(LocalDate.of(1988, 11, 03));
-//        maestro.setFechaNacimiento(fechaNacimientoDate);
-//        maestro.setSexo('H');
-//        maestro.calcularEdad();
-//        maestro.setGradoDeEstudios("Licenciatura");
-//
-//        System.out.println(maestro);
+        final Maestro objetoMaestro = new Maestro("Raúl", "Arquitecto de Software");
+
+        fechaNacimientoDate = UtilidadFechas.convertirLocalDateAUtilDate(LocalDate.of(1988, 11, 03));
+        objetoMaestro.setFechaNacimiento(fechaNacimientoDate);
+        objetoMaestro.setSexo('H');
+        objetoMaestro.calcularEdad();
+        objetoMaestro.setGradoDeEstudios("Licenciatura");
+
+        System.out.println(objetoMaestro);
+
+        final Alumno objetoAlumno = new Alumno();
+
+        objetoAlumno.setPromedio(9.5f);
+        objetoAlumno.setNombre("Rogelio Gonzalez");
+        objetoAlumno.setApellidoPaterno("Gonzalez");
 
     }
 
