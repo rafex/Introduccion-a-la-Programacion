@@ -20,13 +20,14 @@ public class Operacion {
 
         for (final Double numero : numeros)
             resultado -= numero;
-
+        
+        
         return resultado;
     }
 
     public static Double multiplicar(Double... numeros) {
 
-        Double resultado = new Double(0);
+        Double resultado = new Double(1);
 
         for (final Double numero : numeros)
             resultado *= numero;
@@ -36,9 +37,9 @@ public class Operacion {
 
     public static Double division(Double divisor, Double dividendo) {
 
-        Double resultado = new Double(0);
+        Double resultado = new Double(1);
 
-        resultado = dividendo / divisor;
+        resultado =  divisor/dividendo;
 
         return resultado;
     }
