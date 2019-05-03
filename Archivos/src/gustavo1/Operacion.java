@@ -1,12 +1,11 @@
-package mx.rafex.cursos.introduccion.clases.ejercicios;
+package gustavo1;
 
 public class Operacion {
 
-    public static Double IVA = 16.0;
+	
+	public static Double IVA = 16.0;
 
     public static Double suma(Double... numeros) {
-    	
-
         Double resultado = new Double(0);
 
         for (final Double numero : numeros)
@@ -16,11 +15,12 @@ public class Operacion {
     }
 
     public static Double resta(Double... numeros) {
-
+    
         Double resultado = new Double(0);
 
         for (final Double numero : numeros)
-            resultado -= numero;
+            resultado = numero;
+        
 
         return resultado;
     }
@@ -73,5 +73,4 @@ public class Operacion {
         return resultado;
 
     }
-
 }
