@@ -16,7 +16,7 @@ public class Reptiles extends Mamiferos{
 	  
 	  this.tieneEscamas = tieneEscamas;
 	  this.tipoReproduccion = tipoReproduccion;
-	  
+	// comentarios  
   }
   
     //get obtiene el valor del parametro

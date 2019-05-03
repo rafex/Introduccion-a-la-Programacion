@@ -8,7 +8,7 @@ public class Animales{
 	    animal.setNombreAnimal("LEON");
 	    animal.setTipoAlimento("CARNIVORO");
 	    animal.setTipoHabitad("SELVA");
-
+// comentarios
 	    System.out.println("Nombre Animal: " + (animal.getNombreAnimal()));
 	    System.out.println("Tipo de Alimentracion: " + (animal.getTipoAlimento()));
 	    System.out.println("Comunmente vive en: " + (animal.getTipoHabitad())+ "\n");
