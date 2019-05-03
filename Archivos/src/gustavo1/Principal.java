@@ -10,8 +10,8 @@ import mx.rafex.cursos.introduccion.clases.ejercicios.Operacion;
 public class Principal {
 	public static void main(String[] lalla) {
 		int operacion;
-		Double numero;
-		Double numero1;
+		Double numero;// decalro varibales 
+		Double numero1;//decalo varibles
 		Double[] valores;
 		char respuesta;
 		Scanner entrada = new Scanner(System.in);
