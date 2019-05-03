@@ -4,6 +4,8 @@ import java.util.Scanner;
 
 public class Principal {
 
+    // comentarios
+
     public static void main(String[] args) {
         Scanner escaner;
         Double inicioRango = 0.0;
@@ -20,8 +22,6 @@ public class Principal {
         System.out.println("**************************************************************************");
         System.out.println("**************************************************************************");
         System.out.println("Listado de nones de un rango determinado de números");
-        System.out.println("**************************************************************************");
-        System.out.println("**************************************************************************");
 
         boolean ejecutar = false;
         do
