@@ -1,0 +1,20 @@
+Evaluación 1 del curso Introducción a la programación (JAVA)
+Nombre:________________________________________________________________________
+Fecha:___________________________
+RECOMENDACIÓN: Primero lee todo el contenido del examen y después contesta.
+1)¿Qué es la JVM?
+2)¿Qué es JRE?
+3)¿Qué es JDK?
+4)Escribe tres datos primitivos.
+5)¿Si tuviera que representar números reales (decimales) que dato primitivo sería?
+6)¿Qué son los modificadores de acceso?
+7)Escribe dos estructuras de control.
+8)¿Cómo es la estructura de un for?
+9)¿Cómo es la estructura de un while?
+10)¿Qué es una clase?
+11)Escribe tres operadores lógicos.
+12)Escribe tres operadores aritméticos.
+13)¿Qué es un String?
+14)¿Cuál es un objeto inmutable de Java?
+15)Escribe un programa que sume los números pares de un rango de números insertados por el usuario.
+TIEMPO DE EXAMEN: 60 minutos.

@@ -14,12 +14,12 @@ public class EscribirArchivoJava8 {
 
     public static void main(String[] args) {
 
-        final String nombreDelArchivo = "archivoDeSalida1.txt";
+        final String nombreDelArchivo = "/tmp/archivoDeSalida5.txt";
 
         Path path;
         path = Paths.get(nombreDelArchivo);
 
-        final String[] lineas = new String[] { "linea 1", "linea 2", "linea 3" };
+        final String[] lineas = new String[] { "linea 1", "linea 2", "linea 3", "linea 4" };
 
         try (BufferedWriter bufferDeEscritura = Files.newBufferedWriter(path, StandardCharsets.UTF_8,
                 StandardOpenOption.CREATE)) {
