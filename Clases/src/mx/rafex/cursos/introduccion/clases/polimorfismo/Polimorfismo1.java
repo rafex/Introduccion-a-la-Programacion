@@ -18,6 +18,12 @@ public class Polimorfismo1 {
         System.out.println("Color: " + f.getColor());
         System.out.println("Área: " + f.area());
 
+        f = new Cuadrado(4, "naranja");
+
+        System.out.println("Cuadrado ");
+        System.out.println("Color: " + f.getColor());
+        System.out.println("Área: " + f.area());
+
     }
 
 }

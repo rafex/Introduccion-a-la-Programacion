@@ -11,11 +11,11 @@ public class Circulo extends Figura {
 
     @Override
     public double area() {
-        return Math.PI * radio * radio;
+        return Math.PI * this.radio * this.radio;
     }
 
     public int getRadio() {
-        return radio;
+        return this.radio;
     }
 
 }

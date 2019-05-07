@@ -10,17 +10,17 @@ public class Triangulo extends Figura {
         this.altura = altura;
     }
 
-    @Override
-    public double area() {
-        return base * altura / 2;
-    }
-
     public int getBase() {
-        return base;
+        return this.base;
     }
 
     public int getAltura() {
-        return altura;
+        return this.altura;
+    }
+
+    @Override
+    public double area() {
+        return (this.base * this.altura) / 2;
     }
 
 }
