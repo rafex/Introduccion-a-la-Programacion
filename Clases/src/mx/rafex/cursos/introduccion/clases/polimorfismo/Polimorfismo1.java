@@ -4,23 +4,23 @@ public class Polimorfismo1 {
 
     public static void main(final String[] args) {
 
-        Figura f;
+        Figura2D f;
 
-        f = new Triangulo(20, 40, "rojo");
+        f = new Triangulo(20, 40, "triangulo", "rojo");
 
-        System.out.println("Triangulo ");
+        System.out.println("Figura: " + f.getNombre());
         System.out.println("Color: " + f.getColor());
         System.out.println("Área: " + f.area());
 
-        f = new Circulo(30, "verde");
+        f = new Circulo(30, "circulo", "verde");
 
-        System.out.println("Circulo ");
+        System.out.println("Figura: " + f.getNombre());
         System.out.println("Color: " + f.getColor());
         System.out.println("Área: " + f.area());
 
-        f = new Cuadrado(4, "naranja");
+        f = new Cuadrado(4, "cuadrado", "naranja");
 
-        System.out.println("Cuadrado ");
+        System.out.println("Figura: " + f.getNombre());
         System.out.println("Color: " + f.getColor());
         System.out.println("Área: " + f.area());
 
