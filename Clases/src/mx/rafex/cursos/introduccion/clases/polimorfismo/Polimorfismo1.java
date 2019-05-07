@@ -24,6 +24,14 @@ public class Polimorfismo1 {
         System.out.println("Color: " + f.getColor());
         System.out.println("Área: " + f.area());
 
+        Figura3D f3d;
+
+        f3d = new Piramide(50, 20, "Piramide", "negro");
+
+        System.out.println("Figura: " + f3d.getNombre());
+        System.out.println("Color: " + f3d.getColor());
+        System.out.println("Volumen: " + ((Piramide) f3d).getAreaBase());
+
     }
 
 }
