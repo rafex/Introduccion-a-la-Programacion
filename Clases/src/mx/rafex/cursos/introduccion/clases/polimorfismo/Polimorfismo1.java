@@ -24,10 +24,11 @@ public class Polimorfismo1 {
         System.out.println("Color: " + f.getColor());
         System.out.println("Ã�rea: " + f.area());
         
-        f = new Romboide(20, 15, "romboide", "azul")
+        f = new Romboide(20, 15, "romboide", "azul");
+        
         System.out.println("Figura: " + f.getNombre());
         System.out.println("Color: " + f.getColor());
-        System.out.println("Ã�rea: " + f.area())
+        System.out.println("Ã�rea: " + f.area());
 
     }
 
