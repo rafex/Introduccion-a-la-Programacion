@@ -24,7 +24,26 @@ hs_err_pid*
 
 .DS_Store
 
+# Archivos del IDE Eclipse
 .settings/
 .classpath
 .project
+
 /bin/
+
+
+# Archivos del IDE IntelliJ
+.idea/
+out/
+.idea_modules/
+
+# Archivos de IDE Netbeans
+build/
+nbbuild/
+dist/
+nbdist/
+.nb-gradle/
+
+target/
+bin/
+
