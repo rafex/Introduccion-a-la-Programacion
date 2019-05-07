@@ -9,7 +9,8 @@ import mx.rafex.cursos.introduccion.clases.utilidades.UtilidadFechas;
 public class Persona {
 
     private String nombre;
-    private String apellido;
+    private String apellidoPaterno;
+    private String apellidoMaterno;
     private String nacionalidad;
     private Integer edad;
     private Character sexo;
@@ -26,7 +27,7 @@ public class Persona {
     public Persona(final String nombre, final String apellido, final String nacionalidad, final Integer edad,
             final Character sexo, final Date fechaNacimiento) {
         this.nombre = nombre;
-        this.apellido = apellido;
+        apellidoMaterno = apellido;
         this.nacionalidad = nacionalidad;
         this.edad = edad;
         this.sexo = sexo;
@@ -36,15 +37,17 @@ public class Persona {
     public Persona(final String nombre, final String apellido, final Integer edad) {
         super();
         this.nombre = nombre;
-        this.apellido = apellido;
+        apellidoMaterno = apellido;
         this.edad = edad;
     }
 
+    // getter
     public String getNacionalidad() {
         return nacionalidad;
     }
 
-    public void setNacionalidad(final String nacionalidad) {
+    // setter
+    public void setNacionalidad(String nacionalidad) {
         this.nacionalidad = nacionalidad;
     }
 
@@ -56,12 +59,12 @@ public class Persona {
         this.nombre = nombre;
     }
 
-    public String getApellido() {
-        return apellido;
+    public String getApellidoMaterno() {
+        return apellidoMaterno;
     }
 
-    public void setApellido(final String apellido) {
-        this.apellido = apellido;
+    public void setApellidoMaterno(final String apellido) {
+        apellidoMaterno = apellido;
     }
 
     public Integer getEdad() {
@@ -88,6 +91,14 @@ public class Persona {
         this.fechaNacimiento = fechaNacimiento;
     }
 
+    public String getApellidoPaterno() {
+        return apellidoPaterno;
+    }
+
+    public void setApellidoPaterno(String apellidoPaterno) {
+        this.apellidoPaterno = apellidoPaterno;
+    }
+
     public void calcularEdad() {
 //        final DateTimeFormatter formatoDeFecha = DateTimeFormatter.ofPattern("dd/MM/yyyy");
         final LocalDate fechaNacimiento = UtilidadFechas.convertirUtilDateALocalDate(this.fechaNacimiento);
@@ -97,14 +108,14 @@ public class Persona {
 
         edad = periodo.getYears();
 
-        System.out.printf("Tu edad es: %s años, %s meses y %s días\n", periodo.getYears(), periodo.getMonths(),
-                periodo.getDays());
+//        System.out.printf("Tu edad es: %s años, %s meses y %s días\n", periodo.getYears(), periodo.getMonths(),
+//                periodo.getDays());
     }
 
     @Override
     public String toString() {
-        return "Persona [nombre=" + nombre + ", apellido=" + apellido + ", nacionalidad=" + nacionalidad + ", edad="
-                + edad + ", sexo=" + sexo + ", fechaNacimiento=" + fechaNacimiento + "]";
+        return "Persona [nombre=" + nombre + ", apellido=" + apellidoMaterno + ", nacionalidad=" + nacionalidad
+                + ", edad=" + edad + ", sexo=" + sexo + ", fechaNacimiento=" + fechaNacimiento + "]";
     }
 
 }
