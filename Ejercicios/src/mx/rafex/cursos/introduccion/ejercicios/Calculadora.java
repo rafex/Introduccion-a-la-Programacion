@@ -9,8 +9,13 @@ public class Calculadora {
         radicando = 80;
         System.out.println("Ingrese el indice");
         indice = 2;
-        final float resultado2 = (float) Math.pow(radicando, 1 / indice);
+        float resultado2 = (float) Math.pow(radicando, 1 / indice);
         System.out.println("La raíz " + indice + " de " + radicando + " es " + resultado2);
+
+        resultado2 = (float) Math.sqrt(radicando);
+        System.out.println("La raíz " + indice + " de " + radicando + " es " + resultado2);
+
+        System.out.println("2^15 " + Math.pow(2, 15));
 
     }
 
