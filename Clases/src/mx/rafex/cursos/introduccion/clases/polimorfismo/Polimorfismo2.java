@@ -6,7 +6,6 @@ public class Polimorfismo2 {
 
         mostrar(new Triangulo(4, 6, "triangulo", "amarillo"));
         mostrar(new Circulo(4, "cuadrado", "azul"));
-        // poligono
         mostrar(new Poligono(8, 5, "Poligono", "morado"));
 
     }

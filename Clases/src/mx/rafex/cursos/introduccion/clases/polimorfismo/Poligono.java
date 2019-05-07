@@ -3,7 +3,6 @@ package mx.rafex.cursos.introduccion.clases.polimorfismo;
 public class Poligono extends Figura2D {
 
     private final int perimetro, apotema;
-    
 
     public Poligono(final int perimetro, final int apotema, final String nombre, final String color) {
         super(nombre, color);
@@ -21,7 +20,8 @@ public class Poligono extends Figura2D {
 
     @Override
     public double area() {
-    return this.perimetro * this.apotema / 2;
+        return this.perimetro * this.apotema / 2;
+
     }
 
 }
