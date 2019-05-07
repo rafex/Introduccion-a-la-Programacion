@@ -10,25 +10,25 @@ public class Polimorfismo1 {
 
         System.out.println("Figura: " + f.getNombre());
         System.out.println("Color: " + f.getColor());
-        System.out.println("Ã�rea: " + f.area());
+        System.out.println("Área: " + f.area());
 
         f = new Circulo(30, "circulo", "verde");
 
         System.out.println("Figura: " + f.getNombre());
         System.out.println("Color: " + f.getColor());
-        System.out.println("Ã�rea: " + f.area());
+        System.out.println("Área: " + f.area());
 
         f = new Cuadrado(4, "cuadrado", "naranja");
 
         System.out.println("Figura: " + f.getNombre());
         System.out.println("Color: " + f.getColor());
-        System.out.println("Ã�rea: " + f.area());
+        System.out.println("Área: " + f.area());
 
         f = new Rectangulo(15, 20, "rectangulo", "guinda");
 
         System.out.println("Figura: " + f.getNombre());
         System.out.println("Color: " + f.getColor());
-        System.out.println("Ã�rea: " + f.area());
+        System.out.println("Área: " + f.area());
     }
 
 }
