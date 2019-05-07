@@ -578,6 +578,10 @@ En la vida real todos los objetos tienen una serie de características y un comp
 - Campos o atributos: componentes de un objeto que almacenan datos, por ejemplo tamaño, edad, sexo, altura, nacionalidad, ancho, color, dimensión, etc...
 - Rutinas o métodos: son el comportamiento de un objeto que lleva a cabo una determinada acción o tarea con los atributos, por ejemplo calcular edad, calcular la hipotenusa, calcular diámetro, calcular área, abrir, cerrar, acelerar, etc...
 
+#### <a name="encapsulamiento"></a>Encapsulamiento
+
+Este concepto consiste en la ocultación del estado o de los datos miembro de una clase, de forma que sólo es posible modificar los mismos mediante los métodos definidos para dicho objeto. Usar la encapsulación permite mantenibilidad en el código.
+
 ### <a name="clases"></a>Clases
 
 Las clases contienen la definición de los objetos, se puede decir que son *"plantillas"* para la creación de objetos. Entonces podemos decir que la clase persona sería la *plantilla* de cada ser humano y esta contendría la definición de un ser humano, y cada ser humano sería una *instancia* u *objeto* de la clase persona.
