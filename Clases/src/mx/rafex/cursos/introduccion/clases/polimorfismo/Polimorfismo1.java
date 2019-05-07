@@ -28,7 +28,6 @@ public class Polimorfismo1 {
         System.out.println("Figura: " + f.getNombre());
         System.out.println("Color: " + f.getColor());
         System.out.println("Ã�rea: " + f.area());
-
     }
 
 }

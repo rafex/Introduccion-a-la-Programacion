@@ -15,5 +15,4 @@ public class Polimorfismo2 {
         System.out.println("El color de la figura es: " + f.getColor());
         System.out.println("El área de la figura es: " + f.area());
     }
-
 }

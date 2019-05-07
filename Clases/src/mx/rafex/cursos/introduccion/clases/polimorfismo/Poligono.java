@@ -21,7 +21,5 @@ public class Poligono extends Figura2D {
     @Override
     public double area() {
         return this.perimetro * this.apotema / 2;
-
     }
-
 }
