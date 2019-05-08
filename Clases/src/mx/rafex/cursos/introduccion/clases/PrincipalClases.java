@@ -56,6 +56,7 @@ public class PrincipalClases {
 //
 //        System.out.println(persona);
 //
+        final Persona p = new Persona();
         final Maestro objetoMaestro = new Maestro("Raúl", "Arquitecto de Software");
 
         fechaNacimientoDate = UtilidadFechas.convertirLocalDateAUtilDate(LocalDate.of(1988, 11, 03));

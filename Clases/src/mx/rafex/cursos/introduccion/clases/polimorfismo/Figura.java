@@ -3,15 +3,19 @@ package mx.rafex.cursos.introduccion.clases.polimorfismo;
 public abstract class Figura {
 
     private final String color;
+    private final String nombre;
 
-    public Figura(final String color) {
+    public Figura(final String nombre, final String color) {
+        this.nombre = nombre;
         this.color = color;
     }
 
     public String getColor() {
-        return color;
+        return this.color;
     }
 
-    public abstract double area();
+    public String getNombre() {
+        return this.nombre;
+    }
 
 }
