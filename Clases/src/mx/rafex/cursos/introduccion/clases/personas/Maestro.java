@@ -21,7 +21,7 @@ public class Maestro extends Persona {
     }
 
     public String getProfesion() {
-        return profesion;
+        return this.profesion;
     }
 
     public void setProfesion(final String profesion) {
@@ -29,7 +29,7 @@ public class Maestro extends Persona {
     }
 
     public String getGradoDeEstudios() {
-        return gradoDeEstudios;
+        return this.gradoDeEstudios;
     }
 
     public void setGradoDeEstudios(final String gradoDeEstudios) {
@@ -38,10 +38,10 @@ public class Maestro extends Persona {
 
     @Override
     public String toString() {
-        return "Maestro [profesion=" + profesion + ", gradoDeEstudios=" + gradoDeEstudios + ", getNacionalidad()="
-                + getNacionalidad() + ", getNombre()=" + getNombre() + ", getApellido()=" + getApellido()
-                + ", getEdad()=" + getEdad() + ", getSexo()=" + getSexo() + ", getFechaNacimiento()="
-                + getFechaNacimiento() + "]";
+        return "Maestro [profesion=" + this.profesion + ", gradoDeEstudios=" + this.gradoDeEstudios
+                + ", getNacionalidad()=" + this.getNacionalidad() + ", getNombre()=" + this.getNombre()
+                + ", getApellido()=" + this.getApellidoMaterno() + ", getEdad()=" + this.getEdad() + ", getSexo()="
+                + this.getSexo() + ", getFechaNacimiento()=" + this.getFechaNacimiento() + "]";
     }
 
 }
