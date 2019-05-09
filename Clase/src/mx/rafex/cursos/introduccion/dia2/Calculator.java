@@ -16,7 +16,9 @@ import javax.swing.UIManager;
  */
 public class Calculator extends JFrame implements ActionListener {
     // create a frame
-    static JFrame f;
+    static JFrame fdklsjljdks;
+
+    // hksdfhsdjkf
 
     // create a textfield
     static JTextField l;
@@ -26,13 +28,13 @@ public class Calculator extends JFrame implements ActionListener {
 
     // default constrcutor
     Calculator() {
-        s0 = s1 = s2 = "";
+        this.s0 = this.s1 = this.s2 = "";
     }
 
     // main function
     public static void main(final String args[]) {
         // create a frame
-        f = new JFrame("calculator");
+        fdklsjljdks = new JFrame("calculator");
 
         try {
             // set look and feel
@@ -124,10 +126,10 @@ public class Calculator extends JFrame implements ActionListener {
         p.setBackground(Color.blue);
 
         // add panel to frame
-        f.add(p);
+        fdklsjljdks.add(p);
 
-        f.setSize(200, 220);
-        f.show();
+        fdklsjljdks.setSize(200, 220);
+        fdklsjljdks.show();
     }
 
     @Override
@@ -135,72 +137,74 @@ public class Calculator extends JFrame implements ActionListener {
         final String s = e.getActionCommand();
 
         // if the value is a number
-        if (s.charAt(0) >= '0' && s.charAt(0) <= '9' || s.charAt(0) == '.') {
+        if (((s.charAt(0) >= '0') && (s.charAt(0) <= '9')) || (s.charAt(0) == '.')) {
             // if operand is present then add to second no
-            if (!s1.equals(""))
-                s2 = s2 + s;
-            else
-                s0 = s0 + s;
+            if (!this.s1.equals("")) {
+                this.s2 = this.s2 + s;
+            } else {
+                this.s0 = this.s0 + s;
+            }
 
             // set the value of text
-            l.setText(s0 + s1 + s2);
+            l.setText(this.s0 + this.s1 + this.s2);
         } else if (s.charAt(0) == 'C') {
             // clear the one letter
-            s0 = s1 = s2 = "";
+            this.s0 = this.s1 = this.s2 = "";
 
             // set the value of text
-            l.setText(s0 + s1 + s2);
+            l.setText(this.s0 + this.s1 + this.s2);
         } else if (s.charAt(0) == '=') {
 
             double te;
 
             // store the value in 1st
-            if (s1.equals("+"))
-                te = Double.parseDouble(s0) + Double.parseDouble(s2);
-            else if (s1.equals("-"))
-                te = Double.parseDouble(s0) - Double.parseDouble(s2);
-            else if (s1.equals("/"))
-                te = Double.parseDouble(s0) / Double.parseDouble(s2);
-            else
-                te = Double.parseDouble(s0) * Double.parseDouble(s2);
-
-            // set the value of text
-            l.setText(s0 + s1 + s2 + "=" + te);
-
-            // convert it to string
-            s0 = Double.toString(te);
-
-            s1 = s2 = "";
-        } else {
-            // if there was no operand
-            if (s1.equals("") || s2.equals(""))
-                s1 = s;
-            // else evaluate
-            else {
-                double te;
-
-                // store the value in 1st
-                if (s1.equals("+"))
-                    te = Double.parseDouble(s0) + Double.parseDouble(s2);
-                else if (s1.equals("-"))
-                    te = Double.parseDouble(s0) - Double.parseDouble(s2);
-                else if (s1.equals("/"))
-                    te = Double.parseDouble(s0) / Double.parseDouble(s2);
-                else
-                    te = Double.parseDouble(s0) * Double.parseDouble(s2);
-
-                // convert it to string
-                s0 = Double.toString(te);
-
-                // place the operator
-                s1 = s;
-
-                // make the operand blank
-                s2 = "";
+            if (this.s1.equals("+")) {
+                te = Double.parseDouble(this.s0) + Double.parseDouble(this.s2);
+            } else if (this.s1.equals("-")) {
+                te = Double.parseDouble(this.s0) - Double.parseDouble(this.s2);
+            } else if (this.s1.equals("/")) {
+                te = Double.parseDouble(this.s0) / Double.parseDouble(this.s2);
+            } else {
+                te = Double.parseDouble(this.s0) * Double.parseDouble(this.s2);
             }
 
             // set the value of text
-            l.setText(s0 + s1 + s2);
+            l.setText(this.s0 + this.s1 + this.s2 + "=" + te);
+
+            // convert it to string
+            this.s0 = Double.toString(te);
+
+            this.s1 = this.s2 = "";
+        } else {
+            // if there was no operand
+            if (this.s1.equals("") || this.s2.equals("")) {
+                this.s1 = s;
+            } else {
+                double te;
+
+                // store the value in 1st
+                if (this.s1.equals("+")) {
+                    te = Double.parseDouble(this.s0) + Double.parseDouble(this.s2);
+                } else if (this.s1.equals("-")) {
+                    te = Double.parseDouble(this.s0) - Double.parseDouble(this.s2);
+                } else if (this.s1.equals("/")) {
+                    te = Double.parseDouble(this.s0) / Double.parseDouble(this.s2);
+                } else {
+                    te = Double.parseDouble(this.s0) * Double.parseDouble(this.s2);
+                }
+
+                // convert it to string
+                this.s0 = Double.toString(te);
+
+                // place the operator
+                this.s1 = s;
+
+                // make the operand blank
+                this.s2 = "";
+            }
+
+            // set the value of text
+            l.setText(this.s0 + this.s1 + this.s2);
         }
     }
 }
