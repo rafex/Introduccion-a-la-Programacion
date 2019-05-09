@@ -26,62 +26,63 @@ public class LoginForm extends Frame implements ActionListener {
 
     LoginForm() {
         super("Login Form");
-        setVisible(true);
+        this.setVisible(true);
         this.setBounds(-1, -1, 600, 600);
         final Panel panel = new Panel();
-        l1 = new JLabel("Login Form");
-        l1.setForeground(Color.blue);
-        l1.setFont(new Font("Serif", Font.BOLD, 20));
+        this.l1 = new JLabel("Login Form");
+        this.l1.setForeground(Color.blue);
+        this.l1.setFont(new Font("Serif", Font.BOLD, 20));
 
-        l2 = new JLabel("Username");
-        l3 = new JLabel("Password");
-        tf1 = new JTextField();
-        p1 = new JPasswordField();
-        btn1 = new JButton("Login");
+        this.l2 = new JLabel("Username");
+        this.l3 = new JLabel("Password");
+        this.tf1 = new JTextField();
+        this.p1 = new JPasswordField();
+        this.btn1 = new JButton("Login");
 
-        l1.setBounds(100, 30, 400, 30);
-        l2.setBounds(80, 70, 200, 30);
-        l3.setBounds(80, 110, 200, 30);
-        tf1.setBounds(300, 70, 200, 30);
-        p1.setBounds(300, 110, 200, 30);
-        btn1.setBounds(150, 160, 100, 30);
+        this.l1.setBounds(100, 30, 400, 30);
+        this.l2.setBounds(80, 70, 200, 30);
+        this.l3.setBounds(80, 110, 200, 30);
+        this.tf1.setBounds(300, 70, 200, 30);
+        this.p1.setBounds(300, 110, 200, 30);
+        this.btn1.setBounds(150, 160, 100, 30);
 
-        panel.add(l1);
-        panel.add(l2);
-        panel.add(tf1);
-        panel.add(l3);
-        panel.add(p1);
-        panel.add(btn1);
+        panel.add(this.l1);
+        panel.add(this.l2);
+        panel.add(this.tf1);
+        panel.add(this.l3);
+        panel.add(this.p1);
+        panel.add(this.btn1);
 
-        btn1.addActionListener(e -> {
-            bb();
+        this.btn1.addActionListener(e -> {
+            this.bb();
         });
 
         panel.setSize(600, 600);
 //        panel.setLayout(null);
         panel.setVisible(true);
 
-        add(panel);
+        this.add(panel);
 
-        addWindowListener(new WindowAdapter() {
+        this.addWindowListener(new WindowAdapter() {
             @Override
             public void windowClosing(final WindowEvent evt) {
-                exitForm(evt);
+                LoginForm.this.exitForm(evt);
             }
         });
     }
 
     public void bb() {
         System.out.println("Estoy haciendo algo...");
-        final String uname = tf1.getText();
-        final String pass = new String(p1.getPassword());
+        final String uname = this.tf1.getText();
+        final String pass = new String(this.p1.getPassword());
         if (uname.equals("rafex") && pass.equals("123")) {
             final Welcome wel = new Welcome();
             wel.setVisible(true);
             final JLabel label = new JLabel("Welcome:" + uname);
             wel.add(label);
-        } else
+        } else {
             JOptionPane.showMessageDialog(this, "Incorrect login or password", "Error", JOptionPane.ERROR_MESSAGE);
+        }
     }
 
     private void exitForm(final WindowEvent evt) {
@@ -107,14 +108,14 @@ class Welcome extends Frame {
 
     Welcome() {
 
-        setTitle("Welcome");
-        setSize(400, 200);
+        this.setTitle("Welcome");
+        this.setSize(400, 200);
 
-        addWindowListener(new WindowAdapter() {
+        this.addWindowListener(new WindowAdapter() {
             @Override
             public void windowClosing(final WindowEvent evt) {
                 try {
-                    finalize();
+                    this.finalize();
                 } catch (final Throwable e) {
                     // TODO Auto-generated catch block
                     e.printStackTrace();

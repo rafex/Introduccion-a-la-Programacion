@@ -5,7 +5,8 @@ public class Polimorfismo2 {
     public static void main(final String[] args) {
 
         mostrar(new Triangulo(4, 6, "triangulo", "amarillo"));
-        mostrar(new Circulo(4, "cuadrado", "azul"));
+        mostrar(new Circulo(4, "Circulo", "azul"));
+        mostrar(new Cuadrado(4, "cuadrado", "rojo"));
 
     }
 
