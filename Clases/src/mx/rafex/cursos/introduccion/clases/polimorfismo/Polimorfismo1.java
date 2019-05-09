@@ -26,7 +26,7 @@ public class Polimorfismo1 {
 
         Figura3D f3d;
 
-        f3d = new Piramide(50, 20, "Piramide", "negro");
+        f3d = new Piramide(10, 20, "Piramide", "negro");
 
         System.out.println("Figura: " + f3d.getNombre());
         System.out.println("Color: " + f3d.getColor());
