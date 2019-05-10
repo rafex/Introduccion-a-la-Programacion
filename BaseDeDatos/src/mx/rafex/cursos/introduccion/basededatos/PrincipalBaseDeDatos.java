@@ -46,7 +46,7 @@ public class PrincipalBaseDeDatos {
         final Integer numeroAzar = (int) (Math.random() * 100000) + 1;
         producto.setNombre("Caja_" + numeroAzar);
         final double random = new Random().nextDouble();
-        final double precioRandom = 10 + random * (5000 - 10);
+        final double precioRandom = 10 + (random * (5000 - 10));
         producto.setPrecio(precioRandom);
         producto.setCantidad((int) (Math.random() * 100000) + 1);
 
@@ -60,7 +60,7 @@ public class PrincipalBaseDeDatos {
 
         final Set<Producto> resultado = ejecutarConsulta(consulta);
 
-        if (resultado != null && !resultado.isEmpty()) {
+        if ((resultado != null) && !resultado.isEmpty()) {
             System.out.println("Resultados encontrados: " + resultado.size());
 
             System.out.println("***************************************************");
@@ -99,8 +99,9 @@ public class PrincipalBaseDeDatos {
             System.err.println(e.getMessage());
         } finally {
             try {
-                if (sentencia != null)
+                if (sentencia != null) {
                     sentencia.close();
+                }
             } catch (final SQLException ex) {
                 System.err.println("Error al cerrar la sentencia");
                 System.err.println(ex.getMessage());
@@ -137,8 +138,9 @@ public class PrincipalBaseDeDatos {
                 sentencia.close();
                 resultSet.close();
 
-            } else
+            } else {
                 System.err.println("Fallo la consulta");
+            }
 
         } catch (final SQLException e) {
             System.err.println("Hubo un error al ejecutar la consulta: ");
@@ -150,8 +152,9 @@ public class PrincipalBaseDeDatos {
 
     public static void cerrarConexion() {
         try {
-            if (conexion != null)
+            if (conexion != null) {
                 conexion.close();
+            }
         } catch (final SQLException ex) {
             System.err.println("Error al cerrar la conexion");
             System.err.println(ex.getMessage());
